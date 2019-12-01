@@ -1,0 +1,82 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:1-29:12
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:1-29:12
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:1-29:12
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:1-29:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/naname/.gradle/caches/transforms-2/files-2.1/fdf08a5e41874bdb047d540ccbc60022/constraint-layout-1.0.2/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:1-29:12
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:1-29:12
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:1-29:12
+	package
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:5:33-80
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:5:7-32
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:3:11-69
+	android:versionCode
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:4:7-30
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:6:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/naname/.gradle/caches/transforms-2/files-2.1/fdf08a5e41874bdb047d540ccbc60022/constraint-layout-1.0.2/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/naname/.gradle/caches/transforms-2/files-2.1/fdf08a5e41874bdb047d540ccbc60022/constraint-layout-1.0.2/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:6:53-85
+	android:icon
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:6:18-52
+activity#com.example.android.accelerometerplay.AccelerometerPlayActivity
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:7:9-16:20
+	android:screenOrientation
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:10:13-49
+	android:label
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:9:13-45
+	android:theme
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:8:13-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:12:13-15:29
+action#android.intent.action.MAIN
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:13:17-69
+	android:name
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:14:17-77
+	android:name
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:14:27-74
+activity#com.example.android.accelerometerplay.SubActivity
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:17:9-20:20
+	android:label
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:19:13-45
+	android:name
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:18:13-40
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:25:1-78
+	android:name
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:25:18-59
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:27:1-80
+	android:name
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:27:18-61
+uses-sdk
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/naname/.gradle/caches/transforms-2/files-2.1/fdf08a5e41874bdb047d540ccbc60022/constraint-layout-1.0.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/naname/.gradle/caches/transforms-2/files-2.1/fdf08a5e41874bdb047d540ccbc60022/constraint-layout-1.0.2/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+		ADDED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml

@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_btleffect003.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/btleffect003.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_enemy015a.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/enemy015a.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_ball.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/ball.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_btleffect1_2.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/btleffect1_2.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_btleffect1_3.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/btleffect1_3.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/layout_activity_sub.xml.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/activity_sub.xml"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_btleffect1_4.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/btleffect1_4.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_battlebg012b.jpg.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/battlebg012b.jpg"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_wood.jpg.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/wood.jpg"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_btleffect1_1.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/btleffect1_1.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_btleffect1_6.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/btleffect1_6.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_btleffect1_5.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/btleffect1_5.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_damage_animation.xml.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/damage_animation.xml"
+    }
+]

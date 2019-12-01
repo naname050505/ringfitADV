@@ -1,0 +1,58 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.android.accelerometerplay"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:25:1-78
+11-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:25:18-59
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:27:1-80
+12-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:27:18-61
+13
+14    <application
+14-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:6:5-22:19
+15        android:debuggable="true"
+16        android:icon="@mipmap/ic_launcher"
+16-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:6:18-52
+17        android:label="@string/app_name"
+17-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:6:53-85
+18        android:testOnly="true" >
+19        <activity
+19-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:7:9-16:20
+20            android:name="com.example.android.accelerometerplay.AccelerometerPlayActivity"
+20-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:8:13-54
+21            android:label="@string/app_name"
+21-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:9:13-45
+22            android:screenOrientation="portrait"
+22-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:10:13-49
+23            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+23-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:11:13-71
+24            <intent-filter>
+24-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:12:13-15:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:13:17-69
+25-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:13:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:14:17-77
+27-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:14:27-74
+28            </intent-filter>
+29        </activity>
+30        <activity
+30-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:17:9-20:20
+31            android:name="com.example.android.accelerometerplay.SubActivity"
+31-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:18:13-40
+32            android:label="@string/app_name" >
+32-->/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/AndroidManifest.xml:19:13-45
+33        </activity>
+34    </application>
+35
+36</manifest>

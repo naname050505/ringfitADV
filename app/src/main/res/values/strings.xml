@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AccelerometerPlay</string>
+    <string name="sub">Sub Activity</string>
+    <string name="return_sub">RETURN</string>
+    <string name="dash_count">0</string>
+</resources>
