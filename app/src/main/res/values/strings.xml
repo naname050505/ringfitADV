@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">AccelerometerPlay</string>
     <string name="sub">Sub Activity</string>
-    <string name="return_sub">RETURN</string>
+    <string name="return_sub">Press Here</string>
     <string name="dash_count">0</string>
 </resources>

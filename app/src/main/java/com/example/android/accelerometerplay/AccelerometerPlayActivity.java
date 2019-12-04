@@ -44,30 +44,34 @@ public class AccelerometerPlayActivity extends Activity {
     private TextView s_val_y;
     private TextView s_val_z;
     private TextView state_info;
+    private TextView swing_info;
     public float mSensorX;
     public float mSensorY;
     public float mSensorZ;
     public TextView squat_count_info;
+    public TextView swing_count_info;
     public boolean change_flg;
     public int down_counter = 0;
+    public int left_counter = 0;
+    public int right_counter = 0;
     public int counter = 0;
     public int squat_counter = 0;
+    public int swing_counter = 0;
     public boolean up_flg = false;
     public ProgressBar bar;
+    public String msg = "1";
 
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        msg = intent.getStringExtra("act");
 
-        // Get an instance of the SensorManager
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        // Get an instance of the PowerManager
         mPowerManager = (PowerManager) getSystemService(POWER_SERVICE);
-        // Get an instance of the WindowManager
         mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
         mDisplay = mWindowManager.getDefaultDisplay();
-        // Create a bright wake lock
         mWakeLock = mPowerManager.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK, getClass()
                 .getName());
 
@@ -77,29 +81,24 @@ public class AccelerometerPlayActivity extends Activity {
         //setContentView(mSimulationView); //never use!!
         final ImageView imageView2 = (ImageView)this.findViewById(R.id.image_view_2);
         imageView2.setImageResource(R.drawable.enemy015a);
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(100,150);
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
         m_val_z = (TextView)this.findViewById(R.id.m_val_z);
         s_val_x = (TextView)this.findViewById(R.id.s_val_x);
         s_val_y = (TextView)this.findViewById(R.id.s_val_y);
         s_val_z = (TextView)this.findViewById(R.id.s_val_z);
-        squat_count_info = (TextView)this.findViewById(R.id.squat_count_info);
-        state_info = (TextView)this.findViewById(R.id.state_info);
+        squat_count_info = this.findViewById(R.id.squat_count_info);
+        swing_count_info = this.findViewById(R.id.swing_count_info);
+        state_info = this.findViewById(R.id.state_info);
 
-        Button button = (Button) findViewById(R.id.button);
+        Button button = this.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             counter +=100;
-            int left = counter/2;
-            int top = counter;
-            int right = counter/2 + imageView2.getWidth();
-            int bottom = counter + imageView2.getHeight();
             s_val_x.setText(String.valueOf(mSensorX));
             s_val_y.setText(String.valueOf(mSensorY));
             s_val_z.setText(String.valueOf(mSensorZ));
-            imageView2.layout(left, top, right, bottom);
             up_flg = false;
             down_counter = 0;
 
@@ -355,28 +354,41 @@ public class AccelerometerPlayActivity extends Activity {
             m_val_x.setText(String.valueOf(mSensorX));
             m_val_y.setText(String.valueOf(mSensorY));
             m_val_z.setText(String.valueOf(mSensorZ));
-            if (Float.parseFloat(s_val_z.getText().toString()) != 0 && !up_flg) {
-                if (Math.abs( Math.abs(mSensorZ) -
-                        Math.abs(Float.parseFloat(s_val_z.getText().toString())) ) > 2) {
-                    down_counter += 1;
-                }
-            }
-            if (down_counter>9){
-                up_flg = true;
-            }
-            if (up_flg){
-                if (Math.abs(Math.abs(mSensorZ) -
-                        Math.abs(Float.parseFloat(s_val_z.getText().toString())) ) < 1) {
-                    down_counter = down_counter - 3;
-                    if (down_counter < 0 ){
-                        down_counter = 0;
-                        squat_counter = Integer.parseInt(squat_count_info.getText().toString()) + 1;
-                        up_flg = false;
+            switch(Integer.valueOf((msg))) {
+                case 1:
+                    if (Float.parseFloat(s_val_y.getText().toString()) == 0) {
+                        if (Math.abs(mSensorY -
+                                Float.parseFloat(s_val_y.getText().toString())) > 1) {
+                            swing_counter++;
+                        }
                     }
-                }
+                case 2:
+                     if (Float.parseFloat(s_val_z.getText().toString()) != 0 && !up_flg) {
+                         if (Math.abs(Math.abs(mSensorZ) -
+                                 Math.abs(Float.parseFloat(s_val_z.getText().toString()))) > 2) {
+                             down_counter += 1;
+                         }
+                     }
+                     if (down_counter>9){
+                     up_flg = true;
+                     }
+                     if (up_flg) {
+                         if (Math.abs(Math.abs(mSensorZ) -
+                                 Math.abs(Float.parseFloat(s_val_z.getText().toString()))) < 1) {
+                             down_counter = down_counter - 3;
+                             if (down_counter < 0) {
+                                 down_counter = 0;
+                                 squat_counter = Integer.parseInt(squat_count_info.getText().toString()) + 1;
+                                 up_flg = false;
+                             }
+                         }
+                     }
+                case 3:
+                    break;
             }
             state_info.setText(String.valueOf(up_flg));
             squat_count_info.setText(String.valueOf(squat_counter));
+            swing_count_info.setText(String.valueOf(swing_counter));
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
         }

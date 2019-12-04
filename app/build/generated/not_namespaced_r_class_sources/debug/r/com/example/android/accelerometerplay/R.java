@@ -436,44 +436,54 @@ public final class R {
   public static final class drawable {
     public static final int ball=0x7f020000;
     public static final int battlebg012b=0x7f020001;
-    public static final int btleffect003=0x7f020002;
-    public static final int btleffect1_1=0x7f020003;
-    public static final int btleffect1_2=0x7f020004;
-    public static final int btleffect1_3=0x7f020005;
-    public static final int btleffect1_4=0x7f020006;
-    public static final int btleffect1_5=0x7f020007;
-    public static final int btleffect1_6=0x7f020008;
-    public static final int damage_animation=0x7f020009;
-    public static final int enemy015a=0x7f02000a;
-    public static final int wood=0x7f02000b;
+    public static final int battlebg013b=0x7f020002;
+    public static final int btleffect003=0x7f020003;
+    public static final int btleffect1_1=0x7f020004;
+    public static final int btleffect1_2=0x7f020005;
+    public static final int btleffect1_3=0x7f020006;
+    public static final int btleffect1_4=0x7f020007;
+    public static final int btleffect1_5=0x7f020008;
+    public static final int btleffect1_6=0x7f020009;
+    public static final int damage_animation=0x7f02000a;
+    public static final int enemy006=0x7f02000b;
+    public static final int enemy015a=0x7f02000c;
+    public static final int wood=0x7f02000d;
   }
   public static final class id {
     public static final int all=0x7f030000;
     public static final int basic=0x7f030001;
     public static final int button=0x7f030002;
     public static final int button_sub=0x7f030003;
-    public static final int chains=0x7f030004;
-    public static final int dash_count=0x7f030005;
-    public static final int image_view_2=0x7f030006;
-    public static final int m_val_x=0x7f030007;
-    public static final int m_val_y=0x7f030008;
-    public static final int m_val_z=0x7f030009;
-    public static final int none=0x7f03000a;
-    public static final int packed=0x7f03000b;
-    public static final int parent=0x7f03000c;
-    public static final int progressBar1=0x7f03000d;
-    public static final int s_val_x=0x7f03000e;
-    public static final int s_val_y=0x7f03000f;
-    public static final int s_val_z=0x7f030010;
-    public static final int spread=0x7f030011;
-    public static final int spread_inside=0x7f030012;
-    public static final int squat_count_info=0x7f030013;
-    public static final int state_info=0x7f030014;
-    public static final int wrap=0x7f030015;
+    public static final int button_sub1=0x7f030004;
+    public static final int button_sub2=0x7f030005;
+    public static final int button_sub3=0x7f030006;
+    public static final int chains=0x7f030007;
+    public static final int dash_count=0x7f030008;
+    public static final int enemy_view=0x7f030009;
+    public static final int image_view_2=0x7f03000a;
+    public static final int m_val_x=0x7f03000b;
+    public static final int m_val_y=0x7f03000c;
+    public static final int m_val_z=0x7f03000d;
+    public static final int none=0x7f03000e;
+    public static final int packed=0x7f03000f;
+    public static final int parent=0x7f030010;
+    public static final int progressBar1=0x7f030011;
+    public static final int progressBar2=0x7f030012;
+    public static final int s_val_x=0x7f030013;
+    public static final int s_val_y=0x7f030014;
+    public static final int s_val_z=0x7f030015;
+    public static final int spread=0x7f030016;
+    public static final int spread_inside=0x7f030017;
+    public static final int squat_count_info=0x7f030018;
+    public static final int state_info=0x7f030019;
+    public static final int swing_count_info=0x7f03001a;
+    public static final int wrap=0x7f03001b;
   }
   public static final class layout {
     public static final int activity_sub=0x7f040000;
-    public static final int main=0x7f040001;
+    public static final int activity_sub2=0x7f040001;
+    public static final int activity_sub3=0x7f040002;
+    public static final int main=0x7f040003;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f050000;

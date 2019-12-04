@@ -45,6 +45,7 @@ attr layout_goneMarginTop
 attr layout_optimizationLevel
 drawable ball
 drawable battlebg012b
+drawable battlebg013b
 drawable btleffect003
 drawable btleffect1_1
 drawable btleffect1_2
@@ -53,14 +54,19 @@ drawable btleffect1_4
 drawable btleffect1_5
 drawable btleffect1_6
 drawable damage_animation
+drawable enemy006
 drawable enemy015a
 drawable wood
 id all
 id basic
 id button
 id button_sub
+id button_sub1
+id button_sub2
+id button_sub3
 id chains
 id dash_count
+id enemy_view
 id image_view_2
 id m_val_x
 id m_val_y
@@ -69,6 +75,7 @@ id none
 id packed
 id parent
 id progressBar1
+id progressBar2
 id s_val_x
 id s_val_y
 id s_val_z
@@ -76,8 +83,11 @@ id spread
 id spread_inside
 id squat_count_info
 id state_info
+id swing_count_info
 id wrap
 layout activity_sub
+layout activity_sub2
+layout activity_sub3
 layout main
 mipmap ic_launcher
 string app_name
