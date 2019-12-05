@@ -67,6 +67,8 @@ public class AccelerometerPlayActivity extends Activity {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         msg = intent.getStringExtra("act");
+        final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mPowerManager = (PowerManager) getSystemService(POWER_SERVICE);
@@ -101,14 +103,11 @@ public class AccelerometerPlayActivity extends Activity {
             s_val_z.setText(String.valueOf(mSensorZ));
             up_flg = false;
             down_counter = 0;
-
-            Intent intent = new Intent(getApplication(), SubActivity.class);
-            startActivity(intent);
+            startActivity(sub_intent);
             }
         });
         bar = (ProgressBar)findViewById(R.id.progressBar1);
         bar.setMax(100);
-        bar.setProgress(100-(10*squat_counter));
     }
 
     @Override
@@ -148,11 +147,13 @@ public class AccelerometerPlayActivity extends Activity {
         private float mHorizontalBound;
         private float mVerticalBound;
         private final ParticleSystem mParticleSystem;
+
         class Particle extends View {
             private float mPosX = (float) Math.random();
             private float mPosY = (float) Math.random();
             private float mVelX;
             private float mVelY;
+
 
             public Particle(Context context) {
                 super(context);
@@ -276,6 +277,15 @@ public class AccelerometerPlayActivity extends Activity {
                         curr.resolveCollisionWithBounds();
                     }
                 }
+                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+                int hitpoint = 100 - (10*squat_counter);
+                bar.setProgress(hitpoint);
+                if (hitpoint <= 0) {
+                    // byouga site
+                    startActivity((sub_intent));
+                }
+
+
             }
 
             public int getParticleCount() {
@@ -384,6 +394,7 @@ public class AccelerometerPlayActivity extends Activity {
                          }
                      }
                 case 3:
+                    up_flg = true;
                     break;
             }
             state_info.setText(String.valueOf(up_flg));
@@ -421,12 +432,6 @@ public class AccelerometerPlayActivity extends Activity {
         @Override
         public void onWindowFocusChanged(boolean hasFocus) {
             super.onWindowFocusChanged(hasFocus);
-
-            ImageView img = (ImageView)findViewById(R.id.image_view_2);
-            //img.setBackgroundResource(R.drawable.damage_animation);
-            //AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
-            // アニメーションの開始
-            //frameAnimation.start();
         }
         @Override
         public void onAccuracyChanged(Sensor sensor, int accuracy) {

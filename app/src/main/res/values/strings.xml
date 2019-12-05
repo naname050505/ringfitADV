@@ -2,6 +2,11 @@
 <resources>
     <string name="app_name">AccelerometerPlay</string>
     <string name="sub">Sub Activity</string>
-    <string name="return_sub">Press Here</string>
+    <string name="activity1">a</string>
+    <string name="activity2">Squat</string>
+    <string name="activity3">Swing</string>
+    <string name="confirm">OK</string>
+    <string name="settings">Setting</string>
+    <string name="set_return">Return</string>
     <string name="dash_count">0</string>
 </resources>

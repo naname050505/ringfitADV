@@ -38,10 +38,9 @@
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="1dp"
-                android:layout_marginRight="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
                 tools:ignore="Suspicious0dp" />
         </LinearLayout>
 
@@ -56,12 +55,12 @@
                 android:background="@drawable/battlebg012b"
                 android:orientation="vertical"
                 tools:ignore="MissingConstraints">
-
                 <ImageView
                     android:id="@+id/enemy_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="77sp"
                     android:contentDescription="@drawable/enemy015a"
                     android:scaleType="centerCrop" />
 
@@ -69,58 +68,123 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+
+                    android:layout_marginTop="222dp"
                     tools:ignore="MissingConstraints">
 
-                    <Button
-                        android:id="@+id/button_sub1"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:layout_weight="0.5"
-                        android:alpha="0.5"
-                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
 
-                        android:text="@string/return_sub"
-                        android:textSize="30sp"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
 
+                            <ImageView
+                                android:id="@+id/action_view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha="0.75"
+                                android:scaleType="centerCrop" />
 
-                    <Button
-                        android:id="@+id/button_sub2"
-                        android:layout_width="wrap_content"
+                            <Button
+                                android:id="@+id/button_sub1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha="0.3"
+                                android:text="@string/activity1"
+                                android:textSize="30sp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:layout_weight="0.5"
-                        android:alpha="0.5"
-                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
 
-                        android:text="@string/return_sub"
-                        android:textSize="30sp"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
 
+                            <ImageView
+                                android:id="@+id/action_view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha="0.75"
+                                android:scaleType="centerCrop" />
 
+                            <Button
+                                android:id="@+id/button_sub2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha="0.3"
+                                android:text="@string/activity2"
+                                android:textSize="30sp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </FrameLayout>
+                    </LinearLayout>
 
-                    <Button
-                        android:id="@+id/button_sub3"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginBottom="0dp"
-                        android:layout_weight="0.5"
-                        android:alpha="0.5"
-                        android:orientation="horizontal"
-                        android:text="@string/return_sub"
-                        android:textSize="30sp"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
+
+                            <ImageView
+                                android:id="@+id/action_view3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha="0.75"
+                                android:scaleType="centerCrop" />
+
+                            <Button
+                                android:id="@+id/button_sub3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:alpha="0.3"
+                                android:text="@string/activity3"
+                                android:textSize="30sp"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </FrameLayout>
+                        >
+                    </LinearLayout>
 
                 </LinearLayout>
-
-
             </FrameLayout>
         </LinearLayout>
     </LinearLayout>

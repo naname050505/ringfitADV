@@ -22,18 +22,18 @@
                 {
                     "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "-1,-1,4,-1",
-                        "startColumns": "-1,-1,4,-1",
-                        "startOffsets": "-1,-1,155,-1",
-                        "endColumns": "-1,-1,49,-1",
-                        "endOffsets": "-1,-1,200,-1"
+                        "startLines": "-1,-1,-1,-1,7,-1,9,8,-1",
+                        "startColumns": "-1,-1,-1,-1,4,-1,4,4,-1",
+                        "startOffsets": "-1,-1,-1,-1,283,-1,367,322,-1",
+                        "endColumns": "-1,-1,-1,-1,38,-1,45,44,-1",
+                        "endOffsets": "-1,-1,-1,-1,317,-1,408,362,-1"
                     },
                     "to": {
-                        "startLines": "91,92,93,94",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "4270,4325,4366,4416",
-                        "endColumns": "54,40,49,44",
-                        "endOffsets": "4320,4361,4411,4456"
+                        "startLines": "91,92,93,94,95,96,97,98,99",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4270,4310,4354,4398,4453,4492,4533,4579,4624",
+                        "endColumns": "39,43,43,54,38,40,45,44,44",
+                        "endOffsets": "4305,4349,4393,4448,4487,4528,4574,4619,4664"
                     }
                 }
             ]

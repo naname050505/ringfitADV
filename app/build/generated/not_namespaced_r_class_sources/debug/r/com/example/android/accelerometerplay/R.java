@@ -447,37 +447,48 @@ public final class R {
     public static final int damage_animation=0x7f02000a;
     public static final int enemy006=0x7f02000b;
     public static final int enemy015a=0x7f02000c;
-    public static final int wood=0x7f02000d;
+    public static final int free_peoples1=0x7f02000d;
+    public static final int free_peoples2=0x7f02000e;
+    public static final int free_peoples3=0x7f02000f;
+    public static final int free_peoples4=0x7f020010;
+    public static final int human_default1=0x7f020011;
+    public static final int like_a_ring_fit=0x7f020012;
+    public static final int squwat=0x7f020013;
+    public static final int swing=0x7f020014;
+    public static final int wood=0x7f020015;
   }
   public static final class id {
-    public static final int all=0x7f030000;
-    public static final int basic=0x7f030001;
-    public static final int button=0x7f030002;
-    public static final int button_sub=0x7f030003;
-    public static final int button_sub1=0x7f030004;
-    public static final int button_sub2=0x7f030005;
-    public static final int button_sub3=0x7f030006;
-    public static final int chains=0x7f030007;
-    public static final int dash_count=0x7f030008;
-    public static final int enemy_view=0x7f030009;
-    public static final int image_view_2=0x7f03000a;
-    public static final int m_val_x=0x7f03000b;
-    public static final int m_val_y=0x7f03000c;
-    public static final int m_val_z=0x7f03000d;
-    public static final int none=0x7f03000e;
-    public static final int packed=0x7f03000f;
-    public static final int parent=0x7f030010;
-    public static final int progressBar1=0x7f030011;
-    public static final int progressBar2=0x7f030012;
-    public static final int s_val_x=0x7f030013;
-    public static final int s_val_y=0x7f030014;
-    public static final int s_val_z=0x7f030015;
-    public static final int spread=0x7f030016;
-    public static final int spread_inside=0x7f030017;
-    public static final int squat_count_info=0x7f030018;
-    public static final int state_info=0x7f030019;
-    public static final int swing_count_info=0x7f03001a;
-    public static final int wrap=0x7f03001b;
+    public static final int action_view1=0x7f030000;
+    public static final int action_view2=0x7f030001;
+    public static final int action_view3=0x7f030002;
+    public static final int all=0x7f030003;
+    public static final int basic=0x7f030004;
+    public static final int button=0x7f030005;
+    public static final int button_sub=0x7f030006;
+    public static final int button_sub1=0x7f030007;
+    public static final int button_sub2=0x7f030008;
+    public static final int button_sub3=0x7f030009;
+    public static final int chains=0x7f03000a;
+    public static final int dash_count=0x7f03000b;
+    public static final int enemy_view=0x7f03000c;
+    public static final int image_view_2=0x7f03000d;
+    public static final int m_val_x=0x7f03000e;
+    public static final int m_val_y=0x7f03000f;
+    public static final int m_val_z=0x7f030010;
+    public static final int none=0x7f030011;
+    public static final int packed=0x7f030012;
+    public static final int parent=0x7f030013;
+    public static final int progressBar1=0x7f030014;
+    public static final int progressBar2=0x7f030015;
+    public static final int s_val_x=0x7f030016;
+    public static final int s_val_y=0x7f030017;
+    public static final int s_val_z=0x7f030018;
+    public static final int spread=0x7f030019;
+    public static final int spread_inside=0x7f03001a;
+    public static final int squat_count_info=0x7f03001b;
+    public static final int state_info=0x7f03001c;
+    public static final int swing_count_info=0x7f03001d;
+    public static final int wrap=0x7f03001e;
   }
   public static final class layout {
     public static final int activity_sub=0x7f040000;
@@ -489,10 +500,15 @@ public final class R {
     public static final int ic_launcher=0x7f050000;
   }
   public static final class string {
-    public static final int app_name=0x7f060000;
-    public static final int dash_count=0x7f060001;
-    public static final int return_sub=0x7f060002;
-    public static final int sub=0x7f060003;
+    public static final int activity1=0x7f060000;
+    public static final int activity2=0x7f060001;
+    public static final int activity3=0x7f060002;
+    public static final int app_name=0x7f060003;
+    public static final int confirm=0x7f060004;
+    public static final int dash_count=0x7f060005;
+    public static final int set_return=0x7f060006;
+    public static final int settings=0x7f060007;
+    public static final int sub=0x7f060008;
   }
   public static final class styleable {
     /**

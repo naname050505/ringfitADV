@@ -50,6 +50,8 @@ public class SubActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplication(), AccelerometerPlayActivity.class);
+                String msg = "1";
+                intent.putExtra("act", msg);
                 startActivity(intent);
             }
         });
@@ -68,8 +70,16 @@ public class SubActivity extends Activity {
 
     private void setScreenSub3(){
         setContentView(R.layout.activity_sub3);
-        final ImageView imageView2 = this.findViewById(R.id.enemy_view);
+        final ImageView imageView2  = this.findViewById(R.id.enemy_view);
+        final ImageView actionView1 = this.findViewById(R.id.action_view1);
+        final ImageView actionView2 = this.findViewById(R.id.action_view2);
+        final ImageView actionView3 = this.findViewById(R.id.action_view3);
         imageView2.setImageResource(R.drawable.enemy015a);
+        actionView1.setImageResource(R.drawable.human_default1);
+        actionView2.setImageResource(R.drawable.squwat);
+        actionView3.setImageResource(R.drawable.swing);
+
+
         final Intent intent = new Intent(getApplication(), AccelerometerPlayActivity.class);
         Button actionButton1 = findViewById(R.id.button_sub1);
         actionButton1.setOnClickListener(new View.OnClickListener() {
