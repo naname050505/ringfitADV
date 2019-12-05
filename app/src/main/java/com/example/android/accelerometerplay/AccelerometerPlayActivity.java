@@ -277,13 +277,6 @@ public class AccelerometerPlayActivity extends Activity {
                         curr.resolveCollisionWithBounds();
                     }
                 }
-                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
-                int hitpoint = 100 - (10*squat_counter);
-                bar.setProgress(hitpoint);
-                if (hitpoint <= 0) {
-                    // byouga site
-                    startActivity((sub_intent));
-                }
 
 
             }
@@ -402,6 +395,14 @@ public class AccelerometerPlayActivity extends Activity {
             swing_count_info.setText(String.valueOf(swing_counter));
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
+            int hitpoint = 100 - (10*squat_counter);
+            bar.setProgress(hitpoint);
+            if (hitpoint <= 0) {
+                // byouga site
+                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+                startActivity((sub_intent));
+            }
+
         }
 
         @Override
