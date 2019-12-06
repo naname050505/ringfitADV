@@ -16,37 +16,76 @@ import android.widget.TextView;
 
 
 public class SubActivity extends Activity {
+    public int talkcounter = 0 ;
+    public TextView talk_message;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setScreenTalk();
         setScreenMain();
+
     }
 
     private void setScreenMain(){
         setContentView(R.layout.activity_sub);
+        final ImageView onayamiman = this.findViewById(R.id.onayamiman);
+        onayamiman.setImageResource(R.drawable.onayami);
 
         Button actionButton1 = findViewById(R.id.button_sub1);
         actionButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setScreenSub2();
+                setScreenSub3();
             }
         });
         Button actionButton2 = findViewById(R.id.button_sub2);
         actionButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setScreenSub3();
+                setScreenTalk();
             }
         });
         Button actionButton3 = findViewById(R.id.button_sub3);
         actionButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplication(), AccelerometerPlayActivity.class);
-                String msg = "1";
-                intent.putExtra("act", msg);
-                startActivity(intent);
+                setScreenSub2();
+            }
+        });
+    }
+
+    private void setScreenTalk(){
+        setContentView(R.layout.activity_talk);
+        talk_message = (TextView)this.findViewById(R.id.text);
+        final ImageView onayamiman = this.findViewById(R.id.onayamiman);
+        onayamiman.setImageResource(R.drawable.onayami);
+
+        Button actionButtonNext = findViewById(R.id.tsugihe);
+
+        actionButtonNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                talkcounter++;
+                switch (talkcounter){
+                    case 1:
+                        talk_message.setText(R.string.b_talk1);
+                        break;
+                    case 2:
+                        talk_message.setText(R.string.a_talk2);
+                        break;
+                    case 3:
+                        talk_message.setText(R.string.b_talk2);
+                        break;
+                    case 4:
+                        talk_message.setText(R.string.a_talk3);
+                        break;
+                    case 5:
+                        talk_message.setText(R.string.b_talk3);
+                        break;
+                    case 6:
+                        talkcounter = 0;
+                        setScreenSub2();
+                }
             }
         });
     }

@@ -9,4 +9,12 @@
     <string name="settings">Setting</string>
     <string name="set_return">Return</string>
     <string name="dash_count">0</string>
+
+    <string name="a_talk1">飲み会ばかりで体重が気になるよ〜</string>
+    <string name="b_talk1">ハローマッスル!! お腹に何個の浮き袋乗せてんだい??</string>
+    <string name="a_talk2">き,君は!?!?</string>
+    <string name="b_talk2">僕の名前は筋 肉雄!! 突然だけど,君にはこれから冒険の世界に出てもらうよ!!</string>
+    <string name="a_talk3">あ</string>
+    <string name="b_talk3">あ</string>
+    <string name="a_talk4">い</string>
 </resources>
