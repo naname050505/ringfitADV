@@ -16,12 +16,6 @@ import android.widget.TextView;
 
 
 public class SubActivity extends Activity {
-    public SensorManager sensorManager;
-    public Sensor sensor;
-    public TextView dash_count;
-    private Sensor mAccelerometer;
-    public ProgressBar bar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,15 +73,12 @@ public class SubActivity extends Activity {
         actionView2.setImageResource(R.drawable.squwat);
         actionView3.setImageResource(R.drawable.swing);
 
-
-        final Intent intent = new Intent(getApplication(), AccelerometerPlayActivity.class);
         Button actionButton1 = findViewById(R.id.button_sub1);
         actionButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String msg = "1";
-                intent.putExtra("act", msg);
-                startActivity(intent);
+                setScreenPreDescription(msg);
             }
         });
         Button actionButton2 = findViewById(R.id.button_sub2);
@@ -95,8 +86,7 @@ public class SubActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String msg = "2";
-                intent.putExtra("act", msg);
-                startActivity(intent);
+                setScreenPreDescription(msg);
             }
         });
         Button actionButton3 = findViewById(R.id.button_sub3);
@@ -104,11 +94,40 @@ public class SubActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String msg = "3";
-                intent.putExtra("act", msg);
+                setScreenPreDescription(msg);
+             }
+        });
+    }
+
+    private void setScreenPreDescription(final String _msg){
+        setContentView(R.layout.activity_predescription);
+
+        final ImageView imageView_pre  = this.findViewById(R.id.enemy_view);
+        final ImageView actionView_pre = this.findViewById(R.id.action_description);
+        //imageView_pre.setImageResource(R.drawable.enemy015a);
+        switch (Integer.valueOf(_msg)) {
+            case 1:
+                actionView_pre.setImageResource(R.drawable.human_default1);
+                break;
+            case 2:
+                actionView_pre.setImageResource(R.drawable.squwat);
+                break;
+            case 3:
+                actionView_pre.setImageResource(R.drawable.swing);
+                break;
+        }
+        Button returnButton = findViewById(R.id.button_next);
+        final Intent intent = new Intent(getApplication(), AccelerometerPlayActivity.class);
+        returnButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                intent.putExtra("act", _msg);
                 startActivity(intent);
             }
         });
     }
+
 
     /***
     @Override

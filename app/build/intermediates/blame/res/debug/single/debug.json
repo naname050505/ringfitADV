@@ -80,6 +80,10 @@
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/swing.png"
     },
     {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/layout_activity_predescription.xml.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/activity_predescription.xml"
+    },
+    {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },

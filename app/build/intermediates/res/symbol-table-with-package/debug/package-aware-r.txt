@@ -65,12 +65,14 @@ drawable like_a_ring_fit
 drawable squwat
 drawable swing
 drawable wood
+id action_description
 id action_view1
 id action_view2
 id action_view3
 id all
 id basic
 id button
+id button_next
 id button_sub
 id button_sub1
 id button_sub2
@@ -96,6 +98,7 @@ id squat_count_info
 id state_info
 id swing_count_info
 id wrap
+layout activity_predescription
 layout activity_sub
 layout activity_sub2
 layout activity_sub3
