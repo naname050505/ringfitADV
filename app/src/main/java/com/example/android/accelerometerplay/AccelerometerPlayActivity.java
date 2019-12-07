@@ -84,13 +84,11 @@ public class AccelerometerPlayActivity extends Activity {
         //setContentView(mSimulationView); //never use!!
         final ImageView imageView2 = (ImageView)this.findViewById(R.id.image_view_2);
         imageView2.setImageResource(R.drawable.enemy015a);
+
         ImageView damageView = findViewById(R.id.damage_view);
         damageView.setBackgroundResource(R.drawable.damage_animation);
         damage_animation = (AnimationDrawable)damageView.getBackground();
-        if(damage_animation.isRunning()){
-            damage_animation.stop();
-        }
-        damage_animation.start();
+
 
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
@@ -410,10 +408,14 @@ public class AccelerometerPlayActivity extends Activity {
             bar.setProgress(hitpoint);
             if (hitpoint <= 0) {
                 // byouga site
-                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
-                startActivity((sub_intent));
+                damage_animation.setVisible(true,true);
+                if(damage_animation.isRunning()){
+                    damage_animation.stop();
+                }
+                damage_animation.start();
+                //final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+                //startActivity((sub_intent));
             }
-
         }
 
         @Override

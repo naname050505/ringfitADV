@@ -123,15 +123,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:scaleType="centerCrop" />
+            android:contentDescription="@drawable/enemy006"
+            android:scaleType="centerCrop"/>
 
         <ImageView
             android:id="@+id/damage_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:contentDescription="@drawable/enemy006"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            tools:visibility="visible" />
 
 
         <Button
