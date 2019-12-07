@@ -60,7 +60,7 @@ public class AccelerometerPlayActivity extends Activity {
     public boolean up_flg = false;
     public ProgressBar bar;
     public String msg = "1";
-    private AnimationDrawable damage_animation;
+    private AnimationDrawable damageAnimation;
     private ImageView damageView;
 
     /** Called when the activity is first created. */
@@ -86,15 +86,15 @@ public class AccelerometerPlayActivity extends Activity {
         final ImageView imageView2 = (ImageView)this.findViewById(R.id.image_view_2);
         imageView2.setImageResource(R.drawable.enemy015a);
 
-        damageView = findViewById(R.id.damage_view);
-        damageView.setBackgroundResource(R.drawable.damage_animation);
-        damage_animation = (AnimationDrawable)damageView.getBackground();
+        damageView = (ImageView) findViewById(R.id.damage_view);
+        damageAnimation = (AnimationDrawable)getResources().getDrawable(R.drawable.damage_animation,null);
+        damageView.setBackground(damageAnimation);
 
         damageView.setVisibility(View.VISIBLE);
-        if(damage_animation.isRunning()){
-            damage_animation.stop();
+        if(damageAnimation.isRunning()){
+            damageAnimation.stop();
         }
-        damage_animation.start();
+        damageAnimation.start();
 
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
@@ -125,7 +125,7 @@ public class AccelerometerPlayActivity extends Activity {
 
     class Starter implements Runnable {
         public void run() {
-            damage_animation.start();
+            damageAnimation.start();
         }
     }
 
@@ -415,10 +415,10 @@ public class AccelerometerPlayActivity extends Activity {
             swing_count_info.setText(String.valueOf(swing_counter));
 
             damageView.setVisibility(View.VISIBLE);
-            if(damage_animation.isRunning()){
-                damage_animation.stop();
+            if(damageAnimation.isRunning()){
+                damageAnimation.stop();
             }
-            damage_animation.start();
+            damageAnimation.start();
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
             int hitpoint = 100 - (10*squat_counter);
@@ -426,10 +426,10 @@ public class AccelerometerPlayActivity extends Activity {
             if (hitpoint <= 0) {
                 // byouga site
                 damageView.setVisibility(View.VISIBLE);
-                if(damage_animation.isRunning()){
-                    damage_animation.stop();
+                if(damageAnimation.isRunning()){
+                    damageAnimation.stop();
                 }
-                damage_animation.start();
+                damageAnimation.start();
                 //final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
                 //startActivity((sub_intent));
             }
