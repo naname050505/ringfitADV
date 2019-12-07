@@ -280,8 +280,6 @@ public class AccelerometerPlayActivity extends Activity {
                         curr.resolveCollisionWithBounds();
                     }
                 }
-
-
             }
 
             public int getParticleCount() {
@@ -398,7 +396,7 @@ public class AccelerometerPlayActivity extends Activity {
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
             bar.setProgress(100-(10*squat_counter));
-            onWindowFocusChanged(true);
+
             int hitpoint = 100 - (10*squat_counter);
             //damageView.setBackgroundResource(R.drawable.damage_animation);
             /***
@@ -438,8 +436,6 @@ public class AccelerometerPlayActivity extends Activity {
                 particleSystem.mBalls[i].setTranslationY(y);
             }
             invalidate();
-            onWindowFocusChanged(true);
-
         }
 
         @Override
