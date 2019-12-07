@@ -15,4 +15,5 @@
     <item android:drawable="@drawable/damage1_6" android:duration="100" />
     <item android:drawable="@drawable/damage1_7" android:duration="100" />
     <item android:drawable="@drawable/damage1_8" android:duration="300" />
+    <item android:drawable="@drawable/damage1_9" android:duration="100" />
 </animation-list>

@@ -51,15 +51,15 @@ public class AccelerometerPlayActivity extends Activity {
     public TextView squat_count_info;
     public TextView swing_count_info;
     public boolean change_flg;
-    public int down_counter = 0;
-    public int left_counter = 0;
-    public int right_counter = 0;
-    public int counter = 0;
-    public int squat_counter = 0;
-    public int swing_counter = 0;
+    public int down_counter;
+    public int left_counter;
+    public int right_counter;
+    public int counter;
+    public int squat_counter;
+    public int swing_counter;
     public boolean up_flg = false;
     public ProgressBar bar;
-    public String msg = "1";
+    public String msg;
     private AnimationDrawable damageAnimation;
     private ImageView damageView;
 
@@ -71,6 +71,12 @@ public class AccelerometerPlayActivity extends Activity {
         msg = intent.getStringExtra("act");
         final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
 
+        down_counter = 0;
+        left_counter = 0;
+        right_counter = 0;
+        counter = 0;
+        squat_counter = 0;
+        swing_counter = 0;
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mPowerManager = (PowerManager) getSystemService(POWER_SERVICE);
@@ -340,8 +346,7 @@ public class AccelerometerPlayActivity extends Activity {
 
         @Override
         public void onSensorChanged(SensorEvent event) {
-
-            if (event.sensor.getType() != Sensor.TYPE_ACCELEROMETER)
+            if (Integer.valueOf(msg) != 1 && event.sensor.getType() != Sensor.TYPE_ACCELEROMETER)
                 return;
             switch (mDisplay.getRotation()) {
                 case Surface.ROTATION_0:
@@ -401,7 +406,7 @@ public class AccelerometerPlayActivity extends Activity {
                                  down_counter = 0;
                                  squat_counter = Integer.parseInt(squat_count_info.getText().toString())+1;
                                  hitpoint = 100 - (10*squat_counter);
-                                 if (!damageAnimation.isRunning()) {
+                                 if (damageAnimation.isRunning()) {
                                      damageView.setVisibility(View.VISIBLE);
                                      damageView.setBackground(damageAnimation);
                                      damageAnimation.start();
@@ -419,7 +424,7 @@ public class AccelerometerPlayActivity extends Activity {
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
             bar.setProgress(hitpoint);
-            if (hitpoint <= 0 && !damageAnimation.isRunning()) {
+            if (hitpoint <= 0) {
                 final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
                 startActivity((sub_intent));
             }
@@ -446,8 +451,6 @@ public class AccelerometerPlayActivity extends Activity {
                 particleSystem.mBalls[i].setTranslationY(y);
             }
             invalidate();
-            onWindowFocusChanged(true);
-
         }
 
         @Override

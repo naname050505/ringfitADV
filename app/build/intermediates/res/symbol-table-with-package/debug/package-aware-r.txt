@@ -55,6 +55,7 @@ drawable damage1_5
 drawable damage1_6
 drawable damage1_7
 drawable damage1_8
+drawable damage1_9
 drawable damage_animation
 drawable enemy006
 drawable enemy015a
