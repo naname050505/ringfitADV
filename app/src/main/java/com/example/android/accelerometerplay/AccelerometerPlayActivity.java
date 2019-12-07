@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.BitmapFactory.Options;
+import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -64,6 +65,9 @@ public class AccelerometerPlayActivity extends Activity {
     private ImageView damageView;
     private int DashCounter = 0;
     private int hitpoint = 100;
+
+
+    private TextView endTalkMessage;
 
 
     /** Called when the activity is first created. */
@@ -149,6 +153,25 @@ public class AccelerometerPlayActivity extends Activity {
     }
 
 
+    private void setScreenEnd(){
+        setContentView(R.layout.activity_end);
+        endTalkMessage = (TextView)this.findViewById(R.id.end_text);
+        //endTalkMessage.setTextColor(Color.WHITE);
+        final ImageView onayamiman = this.findViewById(R.id.onayamiman);
+        onayamiman.setImageResource(R.drawable.yatta_man);
+        final ImageView muscle = this.findViewById(R.id.muscle);
+        muscle.setImageResource(R.drawable.muscle);
+
+        Button actionButtonNext = findViewById(R.id.tsugihe);
+
+        actionButtonNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+                startActivity((sub_intent));
+            }
+        });
+    }
     class SimulationView extends FrameLayout implements SensorEventListener {
         // diameter of the balls in meters
         private static final float sBallDiameter = 0.004f;
@@ -444,8 +467,7 @@ public class AccelerometerPlayActivity extends Activity {
             swing_count_info.setText(String.valueOf(swing_counter));
             bar.setProgress(hitpoint);
             if (hitpoint <= 0) {
-                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
-                startActivity((sub_intent));
+                setScreenEnd();
             }
         }
 

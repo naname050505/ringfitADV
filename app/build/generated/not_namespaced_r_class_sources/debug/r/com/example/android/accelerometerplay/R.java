@@ -464,6 +464,7 @@ public final class R {
     public static final int swing_description1=0x7f02001b;
     public static final int swing_description2=0x7f02001c;
     public static final int wood=0x7f02001d;
+    public static final int yatta_man=0x7f02001e;
   }
   public static final class id {
     public static final int action_description1=0x7f030000;
@@ -482,39 +483,41 @@ public final class R {
     public static final int chains=0x7f03000d;
     public static final int circle=0x7f03000e;
     public static final int damage_view=0x7f03000f;
-    public static final int enemy_view=0x7f030010;
-    public static final int image_view_2=0x7f030011;
-    public static final int m_val_x=0x7f030012;
-    public static final int m_val_y=0x7f030013;
-    public static final int m_val_z=0x7f030014;
-    public static final int muscle=0x7f030015;
-    public static final int none=0x7f030016;
-    public static final int onayamiman=0x7f030017;
-    public static final int packed=0x7f030018;
-    public static final int parent=0x7f030019;
-    public static final int progressBar1=0x7f03001a;
-    public static final int s_val_x=0x7f03001b;
-    public static final int s_val_y=0x7f03001c;
-    public static final int s_val_z=0x7f03001d;
-    public static final int set_button=0x7f03001e;
-    public static final int spread=0x7f03001f;
-    public static final int spread_inside=0x7f030020;
-    public static final int squat_count_info=0x7f030021;
-    public static final int state_info=0x7f030022;
-    public static final int swing_count_info=0x7f030023;
-    public static final int text=0x7f030024;
-    public static final int touch_button=0x7f030025;
-    public static final int touch_screen=0x7f030026;
-    public static final int tsugihe=0x7f030027;
-    public static final int wrap=0x7f030028;
+    public static final int end_text=0x7f030010;
+    public static final int enemy_view=0x7f030011;
+    public static final int image_view_2=0x7f030012;
+    public static final int m_val_x=0x7f030013;
+    public static final int m_val_y=0x7f030014;
+    public static final int m_val_z=0x7f030015;
+    public static final int muscle=0x7f030016;
+    public static final int none=0x7f030017;
+    public static final int onayamiman=0x7f030018;
+    public static final int packed=0x7f030019;
+    public static final int parent=0x7f03001a;
+    public static final int progressBar1=0x7f03001b;
+    public static final int s_val_x=0x7f03001c;
+    public static final int s_val_y=0x7f03001d;
+    public static final int s_val_z=0x7f03001e;
+    public static final int set_button=0x7f03001f;
+    public static final int spread=0x7f030020;
+    public static final int spread_inside=0x7f030021;
+    public static final int squat_count_info=0x7f030022;
+    public static final int state_info=0x7f030023;
+    public static final int swing_count_info=0x7f030024;
+    public static final int text=0x7f030025;
+    public static final int touch_button=0x7f030026;
+    public static final int touch_screen=0x7f030027;
+    public static final int tsugihe=0x7f030028;
+    public static final int wrap=0x7f030029;
   }
   public static final class layout {
-    public static final int activity_predescription=0x7f040000;
-    public static final int activity_sub=0x7f040001;
-    public static final int activity_sub2=0x7f040002;
-    public static final int activity_sub3=0x7f040003;
-    public static final int activity_talk=0x7f040004;
-    public static final int main=0x7f040005;
+    public static final int activity_end=0x7f040000;
+    public static final int activity_predescription=0x7f040001;
+    public static final int activity_sub=0x7f040002;
+    public static final int activity_sub2=0x7f040003;
+    public static final int activity_sub3=0x7f040004;
+    public static final int activity_talk=0x7f040005;
+    public static final int main=0x7f040006;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f050000;
@@ -535,11 +538,12 @@ public final class R {
     public static final int b_talk_after_select2=0x7f06000c;
     public static final int confirm=0x7f06000d;
     public static final int dash_count=0x7f06000e;
-    public static final int give_up=0x7f06000f;
-    public static final int set_return=0x7f060010;
-    public static final int settings=0x7f060011;
-    public static final int sub=0x7f060012;
-    public static final int touch_screen=0x7f060013;
+    public static final int end_talk=0x7f06000f;
+    public static final int give_up=0x7f060010;
+    public static final int set_return=0x7f060011;
+    public static final int settings=0x7f060012;
+    public static final int sub=0x7f060013;
+    public static final int touch_screen=0x7f060014;
   }
   public static final class styleable {
     /**

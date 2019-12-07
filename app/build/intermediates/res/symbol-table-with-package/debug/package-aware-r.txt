@@ -73,6 +73,7 @@ drawable swing
 drawable swing_description1
 drawable swing_description2
 drawable wood
+drawable yatta_man
 id action_description1
 id action_description2
 id action_description_text
@@ -89,6 +90,7 @@ id button_sub3
 id chains
 id circle
 id damage_view
+id end_text
 id enemy_view
 id image_view_2
 id m_val_x
@@ -114,6 +116,7 @@ id touch_button
 id touch_screen
 id tsugihe
 id wrap
+layout activity_end
 layout activity_predescription
 layout activity_sub
 layout activity_sub2
@@ -136,6 +139,7 @@ string b_talk_after_select1
 string b_talk_after_select2
 string confirm
 string dash_count
+string end_talk
 string give_up
 string set_return
 string settings
