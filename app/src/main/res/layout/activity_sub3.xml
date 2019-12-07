@@ -41,7 +41,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
 
-                    android:layout_marginTop="250dp"
+                    android:layout_marginTop="200dp"
                     tools:ignore="MissingConstraints">
 
                     <LinearLayout
@@ -64,7 +64,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:layout_weight="1"
-                                android:alpha="0.75"
+                                android:alpha="0.8"
                                 android:scaleType="centerCrop" />
 
                             <Button
@@ -101,7 +101,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:layout_weight="1"
-                                android:alpha="0.75"
+                                android:alpha="0.8"
                                 android:scaleType="centerCrop" />
 
                             <Button
@@ -138,7 +138,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:layout_weight="1"
-                                android:alpha="0.75"
+                                android:alpha="0.8"
                                 android:scaleType="centerCrop" />
 
                             <Button

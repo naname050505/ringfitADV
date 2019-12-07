@@ -39,6 +39,15 @@ tools:context=".AccelerometerPlayActivity">
                     android:layout_gravity="center"
                     android:contentDescription="@drawable/onayami"
                     android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/muscle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@drawable/muscle"
+                    android:scaleType="centerCrop" />
+
             </LinearLayout>
 
             <TextView
@@ -52,7 +61,7 @@ tools:context=".AccelerometerPlayActivity">
                 android:textSize="33sp"
                 android:paddingTop="44dp"
                 android:paddingBottom="50dp"
-                android:background="#0000ff"
+                android:background="#CC0000ff"
                 android:alpha="0.7"
                 android:layout_gravity="bottom" />
         </FrameLayout>
@@ -66,7 +75,7 @@ tools:context=".AccelerometerPlayActivity">
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
         android:layout_weight="1"
-        android:alpha="0.2"
+        android:alpha="0"
         android:orientation="horizontal"
         android:text="@string/confirm"
         android:textSize="30sp"
