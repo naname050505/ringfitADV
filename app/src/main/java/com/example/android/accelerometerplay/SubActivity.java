@@ -44,10 +44,6 @@ public class SubActivity extends Activity {
     private void setScreenMain(){
         setContentView(R.layout.activity_sub);
         touch_screen = (TextView) findViewById(R.id.touch_screen);
-
-        Handler mHandler = new Handler();
-        ScheduledExecutorService mScheduledExecutor;
-        TextView mLblMeasuring;
         startButton();
         Button startButton = findViewById(R.id.touch_button);
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -229,7 +225,8 @@ public class SubActivity extends Activity {
                 break;
         }
         Button returnButton = findViewById(R.id.button_next);
-        final Intent intent = new Intent(getApplication(), AccelerometerPlayActivity.class);
+        final Intent intent = new Intent(getApplication(),
+                                            AccelerometerPlayActivity.class);
         returnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -61,6 +61,10 @@ public class AccelerometerPlayActivity extends Activity {
     public ProgressBar bar;
     public String msg = "1";
 
+    private AnimationDrawable animation;
+    final ImageView damageView = (ImageView)this.findViewById(R.id.damage_view);
+
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,7 +72,6 @@ public class AccelerometerPlayActivity extends Activity {
         Intent intent = getIntent();
         msg = intent.getStringExtra("act");
         final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
-
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mPowerManager = (PowerManager) getSystemService(POWER_SERVICE);
@@ -80,9 +83,9 @@ public class AccelerometerPlayActivity extends Activity {
         mSimulationView = new SimulationView(this);
         mSimulationView.setBackgroundResource(R.drawable.battlebg012b);
         setContentView(R.layout.main);
-        //setContentView(mSimulationView); //never use!!
         final ImageView imageView2 = (ImageView)this.findViewById(R.id.image_view_2);
         imageView2.setImageResource(R.drawable.enemy015a);
+
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
         m_val_z = (TextView)this.findViewById(R.id.m_val_z);
@@ -390,13 +393,22 @@ public class AccelerometerPlayActivity extends Activity {
                     up_flg = true;
                     break;
             }
+            damageView.setImageResource(R.drawable.enemy015a);
             state_info.setText(String.valueOf(up_flg));
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
             int hitpoint = 100 - (10*squat_counter);
+            //damageView.setBackgroundResource(R.drawable.damage_animation);
+            /***
+            animation = (AnimationDrawable)damageView.getBackground();
+            if(animation.isRunning()){
+                animation.stop();
+            }
+            animation.start();
             bar.setProgress(hitpoint);
+             ***/
             if (hitpoint <= 0) {
                 // byouga site
                 final Intent sub_intent = new Intent(getApplication(), SubActivity.class);

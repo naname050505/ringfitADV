@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     >
-    <item android:drawable="@drawable/btleffect1_1" android:duration="50" />
-    <item android:drawable="@drawable/btleffect1_2" android:duration="50" />
-    <item android:drawable="@drawable/btleffect1_3" android:duration="50" />
-    <item android:drawable="@drawable/btleffect1_4" android:duration="50" />
-    <item android:drawable="@drawable/btleffect1_5" android:duration="50" />
-    <item android:drawable="@drawable/btleffect1_6" android:duration="50" />
+    <item android:drawable="@drawable/btleffect1_1" android:duration="500" />
+    <item android:drawable="@drawable/btleffect1_2" android:duration="500" />
+    <item android:drawable="@drawable/btleffect1_3" android:duration="500" />
+    <item android:drawable="@drawable/btleffect1_4" android:duration="500" />
+    <item android:drawable="@drawable/btleffect1_5" android:duration="500" />
+    <item android:drawable="@drawable/btleffect1_6" android:duration="500" />
 </animation-list>
