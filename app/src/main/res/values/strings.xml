@@ -5,18 +5,21 @@
     <string name="activity1">a</string>
     <string name="activity2">Squat</string>
     <string name="activity3">Swing</string>
-    <string name="confirm">旅に出る</string>
+    <string name="confirm">トレーニングする</string>
     <string name="touch_screen">TOUCH SCREEN</string>
     <string name="settings">Setting</string>
     <string name="set_return">OK!!</string>
-    <string name="give_up">このままメタボ街道</string>
+    <string name="give_up">ぽっちゃリーマン</string>
     <string name="dash_count">0</string>
 
-    <string name="a_talk1">飲み会ばかりで体重が気になるよ〜</string>
-    <string name="b_talk1">ハローマッスル!! お腹に何個の浮き袋乗せてんだい??</string>
-    <string name="a_talk2">き,君は!?!?</string>
-    <string name="b_talk2">僕の名前は筋 肉雄!! 突然だが君には筋肉が正義の世界に出てもらうよ!!</string>
-    <string name="a_talk3">唐突ですね...</string>
-    <string name="b_talk3">そのままメタボになるか,筋肉で世界を生き延びるか選びな</string>
+    <string name="a_talk1">  飲み会ばかりで体重が気になるよ〜</string>
+    <string name="b_talk1">  ハローマッスル!! ところで君の段腹は\n
+                            いったい何個に割れてんだい??</string>
+    <string name="a_talk2">  き,君は!?!?</string>
+    <string name="b_talk2">  僕の名前は向向 鳴造(むきむき なるぞう)!!\n 僕と一緒にトレーニングをしよう!!</string>
+    <string name="a_talk3">  トレーニングって言われると気乗りしないなあ</string>
+    <string name="b_talk3">  そのまま何もせずぽっちゃリーマンになるか,\n
+                            僕のようにムキムキスーパーボディになるか\n
+                            覚悟を決めるんだ!!</string>
     <string name="a_talk_select">僕は･････</string>
 </resources>

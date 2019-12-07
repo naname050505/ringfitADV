@@ -90,8 +90,8 @@
                     android:textSize="33sp"
                     android:paddingTop="44dp"
                     android:paddingBottom="50dp"
-                    android:background="#0000ff"
-                    android:alpha="0.7"
+                    android:background="#CC00004f"
+                    android:alpha="0.9"
                     android:layout_gravity="bottom" />
             </FrameLayout>
 

@@ -7,12 +7,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     >
-    <item android:drawable="@drawable/damage1_1" android:duration="50" />
-    <item android:drawable="@drawable/damage1_2" android:duration="50" />
-    <item android:drawable="@drawable/damage1_3" android:duration="50" />
-    <item android:drawable="@drawable/damage1_4" android:duration="50" />
-    <item android:drawable="@drawable/damage1_5" android:duration="50" />
-    <item android:drawable="@drawable/damage1_6" android:duration="50" />
-    <item android:drawable="@drawable/damage1_7" android:duration="50" />
-    <item android:drawable="@drawable/damage1_8" android:duration="100" />
+    <item android:drawable="@drawable/damage1_1" android:duration="100" />
+    <item android:drawable="@drawable/damage1_2" android:duration="100" />
+    <item android:drawable="@drawable/damage1_3" android:duration="100" />
+    <item android:drawable="@drawable/damage1_4" android:duration="100" />
+    <item android:drawable="@drawable/damage1_5" android:duration="100" />
+    <item android:drawable="@drawable/damage1_6" android:duration="100" />
+    <item android:drawable="@drawable/damage1_7" android:duration="100" />
+    <item android:drawable="@drawable/damage1_8" android:duration="300" />
 </animation-list>

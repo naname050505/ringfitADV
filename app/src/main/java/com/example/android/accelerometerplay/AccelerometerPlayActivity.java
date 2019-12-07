@@ -401,8 +401,6 @@ public class AccelerometerPlayActivity extends Activity {
             state_info.setText(String.valueOf(up_flg));
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
-            bar.setProgress(100-(10*squat_counter));
-            onWindowFocusChanged(true);
             int hitpoint = 100 - (10*squat_counter);
             bar.setProgress(hitpoint);
             if (hitpoint <= 0 && !damageAnimation.isRunning()) {
