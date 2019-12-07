@@ -151,10 +151,13 @@ public class SubActivity extends Activity {
                                 setContentView(R.layout.activity_talk);
                                 talk_message = (TextView)findViewById(R.id.text);
                                 talk_message.setTextColor(Color.WHITE);
+                                talk_message.setText(R.string.b_talk_after_select1);
                                 final ImageView onayamiman = findViewById(R.id.onayamiman);
                                 onayamiman.setImageResource(R.drawable.onayami);
                                 final ImageView muscle = findViewById(R.id.muscle);
                                 muscle.setImageResource(R.drawable.muscle);
+                                onayamiman.setAlpha(100);
+                                muscle.setAlpha(255);
                                 Button actionButtonNext = findViewById(R.id.tsugihe);
                                 actionButtonNext.setOnClickListener(new View.OnClickListener() {
                                     @Override
@@ -172,10 +175,9 @@ public class SubActivity extends Activity {
                                 setContentView(R.layout.activity_talk);
                                 talk_message = (TextView)findViewById(R.id.text);
                                 talk_message.setTextColor(Color.WHITE);
+                                talk_message.setText(R.string.b_talk_after_select2);
                                 final ImageView onayamiman = findViewById(R.id.onayamiman);
-                                onayamiman.setImageResource(R.drawable.onayami);
                                 final ImageView muscle = findViewById(R.id.muscle);
-                                muscle.setImageResource(R.drawable.muscle);
                                 Button actionButtonNext = findViewById(R.id.tsugihe);
                                 actionButtonNext.setOnClickListener(new View.OnClickListener() {
                                     @Override
