@@ -60,6 +60,7 @@ public class AccelerometerPlayActivity extends Activity {
     public boolean up_flg = false;
     public ProgressBar bar;
     public String msg = "1";
+    private AnimationDrawable damage_animation;
 
     /** Called when the activity is first created. */
     @Override
@@ -83,6 +84,14 @@ public class AccelerometerPlayActivity extends Activity {
         //setContentView(mSimulationView); //never use!!
         final ImageView imageView2 = (ImageView)this.findViewById(R.id.image_view_2);
         imageView2.setImageResource(R.drawable.enemy015a);
+        ImageView damageView = findViewById(R.id.damage_view);
+        damageView.setBackgroundResource(R.drawable.damage_animation);
+        damage_animation = (AnimationDrawable)damageView.getBackground();
+        if(damage_animation.isRunning()){
+            damage_animation.stop();
+        }
+        damage_animation.start();
+
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
         m_val_z = (TextView)this.findViewById(R.id.m_val_z);
@@ -394,6 +403,7 @@ public class AccelerometerPlayActivity extends Activity {
             state_info.setText(String.valueOf(up_flg));
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
+
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
             int hitpoint = 100 - (10*squat_counter);
