@@ -60,8 +60,8 @@ public class AccelerometerPlayActivity extends Activity {
     public boolean up_flg = false;
     public ProgressBar bar;
     public String msg = "1";
-    private AnimationDrawable damage_animation;
     private ImageView damageView;
+    private AnimationDrawable damageAnimation;
 
     /** Called when the activity is first created. */
     @Override
@@ -87,14 +87,14 @@ public class AccelerometerPlayActivity extends Activity {
         imageView2.setImageResource(R.drawable.enemy015a);
 
         damageView = findViewById(R.id.damage_view);
-        damageView.setBackgroundResource(R.drawable.damage_animation);
-        damage_animation = (AnimationDrawable)damageView.getBackground();
+        damageAnimation = (AnimationDrawable)getResources().getDrawable(R.drawable.damage_animation,null);
+        damageView.setBackground(damageAnimation);
 
         damageView.setVisibility(View.VISIBLE);
-        if(damage_animation.isRunning()){
-            damage_animation.stop();
+        if(damageAnimation.isRunning()){
+            damageAnimation.stop();
         }
-        damage_animation.start();
+        //damageAnimation.start();
 
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
@@ -123,11 +123,10 @@ public class AccelerometerPlayActivity extends Activity {
         bar.setMax(100);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mWakeLock.acquire();
-        mSimulationView.startSimulation();
+    class Starter implements Runnable {
+        public void run() {
+            damageAnimation.start();
+        }
     }
 
     @Override
@@ -138,7 +137,9 @@ public class AccelerometerPlayActivity extends Activity {
         // and release our wake-lock
         mWakeLock.release();
     }
-
+    public void startAnimation(View view) {
+        damageAnimation.start();
+    }
 
     class SimulationView extends FrameLayout implements SensorEventListener {
         // diameter of the balls in meters
@@ -291,8 +292,6 @@ public class AccelerometerPlayActivity extends Activity {
                         curr.resolveCollisionWithBounds();
                     }
                 }
-
-
             }
 
             public int getParticleCount() {
@@ -409,21 +408,27 @@ public class AccelerometerPlayActivity extends Activity {
             swing_count_info.setText(String.valueOf(swing_counter));
 
             damageView.setVisibility(View.VISIBLE);
-            if(damage_animation.isRunning()){
-                damage_animation.stop();
+            if(damageAnimation.isRunning()){
+                damageAnimation.stop();
             }
-            damage_animation.start();
+            damageAnimation.start();
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
             int hitpoint = 100 - (10*squat_counter);
+
+            damageView.setVisibility(View.VISIBLE);
+            if(damageAnimation.isRunning()){
+                damageAnimation.stop();
+            }
+            //damageAnimation.start();
             bar.setProgress(hitpoint);
             if (hitpoint <= 0) {
                 // byouga site
                 damageView.setVisibility(View.VISIBLE);
-                if(damage_animation.isRunning()){
-                    damage_animation.stop();
+                if(damageAnimation.isRunning()){
+                    damageAnimation.stop();
                 }
-                damage_animation.start();
+                damageAnimation.start();
                 //final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
                 //startActivity((sub_intent));
             }
