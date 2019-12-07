@@ -259,20 +259,27 @@ public class SubActivity extends Activity {
         setContentView(R.layout.activity_predescription);
 
         final ImageView imageView_pre  = this.findViewById(R.id.enemy_view);
-        final ImageView actionView_pre = this.findViewById(R.id.action_description);
+        final ImageView actionView_pre1 = this.findViewById(R.id.action_description1);
+        final ImageView actionView_pre2 = this.findViewById(R.id.action_description2);
+        final ImageView circleView = this.findViewById(R.id.circle);
         final TextView actionName      = this.findViewById(R.id.action_description_text);
         switch (Integer.valueOf(_msg)) {
             case 1:
                 actionName.setText(R.string.activity1);
-                actionView_pre.setImageResource(R.drawable.human_default1);
+                actionView_pre1.setImageResource(R.drawable.human_default1);
+                actionView_pre2.setVisibility(View.GONE);
                 break;
             case 2:
                 actionName.setText(R.string.activity2);
-                actionView_pre.setImageResource(R.drawable.squwat);
+                actionView_pre1.setImageResource(R.drawable.squwat_description1);
+                actionView_pre2.setImageResource(R.drawable.squwat_description2);
+                circleView.setImageResource(R.drawable.circle);
                 break;
             case 3:
                 actionName.setText(R.string.activity3);
-                actionView_pre.setImageResource(R.drawable.swing);
+                actionView_pre1.setImageResource(R.drawable.swing_description1);
+                actionView_pre2.setImageResource(R.drawable.swing_description2);
+                circleView.setImageResource(R.drawable.circle);
                 break;
         }
         Button returnButton = findViewById(R.id.button_next);

@@ -46,7 +46,7 @@ attr layout_optimizationLevel
 drawable ball
 drawable battlebg012b
 drawable battlebg013b
-drawable damage1
+drawable circle
 drawable damage1_1
 drawable damage1_2
 drawable damage1_3
@@ -58,7 +58,6 @@ drawable damage1_8
 drawable damage_animation
 drawable enemy006
 drawable enemy015a
-drawable free_peoples1
 drawable free_peoples3
 drawable free_peoples4
 drawable human_default1
@@ -66,9 +65,14 @@ drawable like_a_ring_fit
 drawable muscle
 drawable onayami
 drawable squwat
+drawable squwat_description1
+drawable squwat_description2
 drawable swing
+drawable swing_description1
+drawable swing_description2
 drawable wood
-id action_description
+id action_description1
+id action_description2
 id action_description_text
 id action_view1
 id action_view2
@@ -81,6 +85,7 @@ id button_sub1
 id button_sub2
 id button_sub3
 id chains
+id circle
 id damage_view
 id enemy_view
 id image_view_2
