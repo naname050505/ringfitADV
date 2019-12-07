@@ -47,6 +47,7 @@ drawable ball
 drawable battlebg012b
 drawable battlebg013b
 drawable circle
+drawable circle_button
 drawable damage1_1
 drawable damage1_2
 drawable damage1_3
@@ -102,6 +103,7 @@ id progressBar1
 id s_val_x
 id s_val_y
 id s_val_z
+id set_button
 id spread
 id spread_inside
 id squat_count_info

@@ -46,8 +46,8 @@ public class SubActivity extends Activity {
         setContentView(R.layout.activity_sub);
         touch_screen = (TextView) findViewById(R.id.touch_screen);
         startButton();
-        Button startButton = findViewById(R.id.touch_button);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        Button startbutton = findViewById(R.id.touch_button);
+        startbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setScreenTalk();
@@ -195,29 +195,6 @@ public class SubActivity extends Activity {
         });
     }
 
-    private void setDecisionScreen(){
-        setContentView(R.layout.activity_sub2);
-        Button confirmButton = findViewById(R.id.button_sub1);
-        talk_message = (TextView)this.findViewById(R.id.text);
-        talk_message.setTextColor(Color.WHITE);
-        confirmButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setReadyScreen();
-                talkcounter = 0;
-            }
-        });
-
-        Button returnButton = findViewById(R.id.button_sub2);
-        returnButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setScreenTalk();
-                talkcounter = 0;
-            }
-        });
-    }
-
     private void setReadyScreen(){
         setContentView(R.layout.activity_sub3);
         final ImageView imageView2  = this.findViewById(R.id.enemy_view);
@@ -233,24 +210,21 @@ public class SubActivity extends Activity {
         actionButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String msg = "1";
-                setScreenPreDescription(msg);
+                setScreenPreDescription("1");
             }
         });
         Button actionButton2 = findViewById(R.id.button_sub2);
         actionButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String msg = "2";
-                setScreenPreDescription(msg);
+                setScreenPreDescription("2");
             }
         });
         Button actionButton3 = findViewById(R.id.button_sub3);
         actionButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String msg = "3";
-                setScreenPreDescription(msg);
+                setScreenPreDescription("3");
              }
         });
     }
@@ -258,7 +232,6 @@ public class SubActivity extends Activity {
     private void setScreenPreDescription(final String _msg){
         setContentView(R.layout.activity_predescription);
 
-        final ImageView imageView_pre  = this.findViewById(R.id.enemy_view);
         final ImageView actionView_pre1 = this.findViewById(R.id.action_description1);
         final ImageView actionView_pre2 = this.findViewById(R.id.action_description2);
         final ImageView circleView = this.findViewById(R.id.circle);

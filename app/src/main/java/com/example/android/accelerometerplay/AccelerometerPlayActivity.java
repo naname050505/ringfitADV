@@ -57,11 +57,14 @@ public class AccelerometerPlayActivity extends Activity {
     public int counter;
     public int squat_counter;
     public int swing_counter;
-    public boolean up_flg = false;
+    public boolean up_flg;
     public ProgressBar bar;
     public String msg;
     private AnimationDrawable damageAnimation;
     private ImageView damageView;
+    private int DashCounter = 0;
+    private int hitpoint = 100;
+
 
     /** Called when the activity is first created. */
     @Override
@@ -77,6 +80,7 @@ public class AccelerometerPlayActivity extends Activity {
         counter = 0;
         squat_counter = 0;
         swing_counter = 0;
+        up_flg = false;
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mPowerManager = (PowerManager) getSystemService(POWER_SERVICE);
@@ -109,15 +113,22 @@ public class AccelerometerPlayActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            counter +=100;
-            s_val_x.setText(String.valueOf(mSensorX));
-            s_val_y.setText(String.valueOf(mSensorY));
-            s_val_z.setText(String.valueOf(mSensorZ));
-            up_flg = false;
-            down_counter = 0;
             startActivity(sub_intent);
             }
         });
+
+        Button setButton = this.findViewById(R.id.set_button);
+        setButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                s_val_x.setText(String.valueOf(mSensorX));
+                s_val_y.setText(String.valueOf(mSensorY));
+                s_val_z.setText(String.valueOf(mSensorZ));
+                up_flg = false;
+                down_counter = 0;
+            }
+        });
+
         bar = (ProgressBar)findViewById(R.id.progressBar1);
         bar.setMax(100);
     }
@@ -133,9 +144,7 @@ public class AccelerometerPlayActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        // Stop the simulation
         mSimulationView.stopSimulation();
-        // and release our wake-lock
         mWakeLock.release();
     }
 
@@ -149,6 +158,7 @@ public class AccelerometerPlayActivity extends Activity {
         private final int mDstHeight;
 
         private Sensor mAccelerometer;
+        private Sensor mStepdetector;
         private long mLastT;
 
         private float mXDpi;
@@ -160,9 +170,6 @@ public class AccelerometerPlayActivity extends Activity {
         private float mHorizontalBound;
         private float mVerticalBound;
         private final ParticleSystem mParticleSystem;
-        private int hitpoint;
-
-
 
         class Particle extends View {
             private float mPosX = (float) Math.random();
@@ -226,7 +233,7 @@ public class AccelerometerPlayActivity extends Activity {
         }
 
         class ParticleSystem {
-            static final int NUM_PARTICLES = 1;
+            static final int NUM_PARTICLES = 0;
             private Particle mBalls[] = new Particle[NUM_PARTICLES];
 
             ParticleSystem() {
@@ -319,6 +326,7 @@ public class AccelerometerPlayActivity extends Activity {
             super(context);
             mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
+
             DisplayMetrics metrics = new DisplayMetrics();
             getWindowManager().getDefaultDisplay().getMetrics(metrics);
             mXDpi = metrics.xdpi;
@@ -374,8 +382,8 @@ public class AccelerometerPlayActivity extends Activity {
             m_val_y.setText(String.valueOf(mSensorY));
             m_val_z.setText(String.valueOf(mSensorZ));
             switch(Integer.valueOf((msg))) {
-                case 1:
-                    if (Float.parseFloat(s_val_y.getText().toString()) == 0) {
+                case 3:
+                    if (Float.parseFloat(s_val_y.getText().toString()) != 0) {
                         if (Math.abs(mSensorY -
                                 Float.parseFloat(s_val_y.getText().toString())) > 1) {
                             swing_counter++;
@@ -416,8 +424,19 @@ public class AccelerometerPlayActivity extends Activity {
                          }
                      }
                      break;
-                case 3:
-                    up_flg = true;
+                case 1:
+                    if (Float.parseFloat(s_val_y.getText().toString()) != 0) {
+                        if (Math.abs(mSensorY -
+                                Float.parseFloat(s_val_y.getText().toString())) > 3) {
+                            DashCounter++;
+                        }
+                        hitpoint = 100 - (DashCounter);
+                        if (damageAnimation.isRunning()) {
+                            damageView.setVisibility(View.VISIBLE);
+                            damageView.setBackground(damageAnimation);
+                            damageAnimation.start();
+                        }
+                    }
                     break;
             }
             state_info.setText(String.valueOf(up_flg));

@@ -80,16 +80,16 @@
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/layout_activity_predescription.xml.flat",
-        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/activity_predescription.xml"
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_squwat_description2.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/squwat_description2.png"
     },
     {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_swing.png.flat",
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/swing.png"
     },
     {
-        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_squwat_description2.png.flat",
-        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/squwat_description2.png"
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/layout_activity_predescription.xml.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/activity_predescription.xml"
     },
     {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_swing_description1.png.flat",
@@ -120,12 +120,16 @@
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/activity_sub2.xml"
     },
     {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_damage1_2.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/damage1_2.png"
+    },
+    {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/layout_activity_sub.xml.flat",
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/activity_sub.xml"
     },
     {
-        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_damage1_2.png.flat",
-        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/damage1_2.png"
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_circle_button.xml.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/circle_button.xml"
     },
     {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_enemy006.png.flat",

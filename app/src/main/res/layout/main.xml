@@ -76,23 +76,17 @@
             android:id="@+id/state_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:visibility="visible"
-            tools:visibility="visible" />
+            android:text="0"/>
         <TextView
             android:id="@+id/squat_count_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:visibility="visible"
-            tools:visibility="visible" />
+            android:text="0" />
         <TextView
             android:id="@+id/swing_count_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            android:visibility="visible"
-            tools:visibility="visible" />
+            android:text="0"/>
     </LinearLayout>
 
     <FrameLayout
@@ -114,7 +108,7 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 tools:ignore="Suspicious0dp" />
         </LinearLayout>
 
@@ -140,11 +134,25 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="40dp"
-            android:text='"Set!!"' />
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text='give up...' />
 
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="222dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_button"
+            android:text="Set!!"
+            android:textSize="33dp"
+            android:visibility="visible" />
 
 
     </FrameLayout>
