@@ -78,7 +78,6 @@ id button_sub1
 id button_sub2
 id button_sub3
 id chains
-id damage_view
 id enemy_view
 id image_view_2
 id m_val_x

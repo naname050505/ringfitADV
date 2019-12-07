@@ -192,8 +192,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/accelerometerplay/AccelerometerPlayActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="437" column="25" selection-start-line="437" selection-start-column="25" selection-end-line="437" selection-end-column="25" />
+            <state relative-caret-position="93">
+              <caret line="86" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
               <folding>
                 <element signature="e#3803#4208#0" expanded="true" />
                 <element signature="e#4207#4208#0" expanded="true" />
@@ -209,7 +209,7 @@
                 <element signature="e#11109#11110#0" expanded="true" />
                 <element signature="e#11286#11287#0" expanded="true" />
                 <element signature="e#11349#11350#0" expanded="true" />
-                <element signature="e#17353#17354#0" expanded="true" />
+                <element signature="e#18505#18506#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -779,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/accelerometerplay/AccelerometerPlayActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="437" column="25" selection-start-line="437" selection-start-column="25" selection-end-line="437" selection-end-column="25" />
+        <state relative-caret-position="93">
+          <caret line="86" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding>
             <element signature="e#3803#4208#0" expanded="true" />
             <element signature="e#4207#4208#0" expanded="true" />
@@ -796,7 +796,7 @@
             <element signature="e#11109#11110#0" expanded="true" />
             <element signature="e#11286#11287#0" expanded="true" />
             <element signature="e#11349#11350#0" expanded="true" />
-            <element signature="e#17353#17354#0" expanded="true" />
+            <element signature="e#18505#18506#0" expanded="true" />
           </folding>
         </state>
       </provider>

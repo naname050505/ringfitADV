@@ -128,12 +128,7 @@
             android:contentDescription="@drawable/enemy015a"
             android:scaleType="centerCrop" />
 
-        <ImageView
-            android:id="@+id/damage_view"
-            android:scaleType="fitCenter"
-            android:background="#000"
-            android:layout_width="600dp"
-            android:layout_height="400dp"/>
+
 
         <Button
             android:id="@+id/button"
