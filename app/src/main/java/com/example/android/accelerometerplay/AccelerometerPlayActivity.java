@@ -90,6 +90,11 @@ public class AccelerometerPlayActivity extends Activity {
         damageView.setBackgroundResource(R.drawable.damage_animation);
         damage_animation = (AnimationDrawable)damageView.getBackground();
 
+        damageView.setVisibility(View.VISIBLE);
+        if(damage_animation.isRunning()){
+            damage_animation.stop();
+        }
+        damage_animation.start();
 
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
@@ -403,6 +408,11 @@ public class AccelerometerPlayActivity extends Activity {
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
 
+            damageView.setVisibility(View.VISIBLE);
+            if(damage_animation.isRunning()){
+                damage_animation.stop();
+            }
+            damage_animation.start();
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
             int hitpoint = 100 - (10*squat_counter);
@@ -410,7 +420,6 @@ public class AccelerometerPlayActivity extends Activity {
             if (hitpoint <= 0) {
                 // byouga site
                 damageView.setVisibility(View.VISIBLE);
-                damage_animation.setVisible(true,true);
                 if(damage_animation.isRunning()){
                     damage_animation.stop();
                 }
