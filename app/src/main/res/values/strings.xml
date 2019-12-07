@@ -22,4 +22,7 @@
                             僕のようにムキムキスーパーボディになるか\n
                             覚悟を決めるんだ!!</string>
     <string name="a_talk_select">僕は･････</string>
+    <string name="b_talk_after_select1"> よーーーし!! いい返事だ!!\n
+                                        まずはこのモンスターを倒してみよう!!!</string>
+    <string name="b_talk_after_select2"> ......(僕は突然目の前が真っ暗になった!!)</string>
 </resources>

@@ -123,6 +123,8 @@ string app_name
 string b_talk1
 string b_talk2
 string b_talk3
+string b_talk_after_select1
+string b_talk_after_select2
 string confirm
 string dash_count
 string give_up

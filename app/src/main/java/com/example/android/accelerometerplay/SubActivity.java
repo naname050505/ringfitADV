@@ -140,7 +140,52 @@ public class SubActivity extends Activity {
                         talk_message.setText(R.string.b_talk3);
                         break;
                     case 6:
-                        setDecisionScreen();
+                        setContentView(R.layout.activity_sub2);
+                        talk_message = (TextView)findViewById(R.id.text);
+                        talk_message.setTextColor(Color.WHITE);
+
+                        Button confirmButton = findViewById(R.id.button_sub1);
+                        confirmButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                setContentView(R.layout.activity_talk);
+                                talk_message = (TextView)findViewById(R.id.text);
+                                talk_message.setTextColor(Color.WHITE);
+                                final ImageView onayamiman = findViewById(R.id.onayamiman);
+                                onayamiman.setImageResource(R.drawable.onayami);
+                                final ImageView muscle = findViewById(R.id.muscle);
+                                muscle.setImageResource(R.drawable.muscle);
+                                Button actionButtonNext = findViewById(R.id.tsugihe);
+                                actionButtonNext.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        talkcounter = 0;
+                                        setReadyScreen();
+                                    }
+                                });
+                            }
+                        });
+                        Button returnButton = findViewById(R.id.button_sub2);
+                        returnButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                setContentView(R.layout.activity_talk);
+                                talk_message = (TextView)findViewById(R.id.text);
+                                talk_message.setTextColor(Color.WHITE);
+                                final ImageView onayamiman = findViewById(R.id.onayamiman);
+                                onayamiman.setImageResource(R.drawable.onayami);
+                                final ImageView muscle = findViewById(R.id.muscle);
+                                muscle.setImageResource(R.drawable.muscle);
+                                Button actionButtonNext = findViewById(R.id.tsugihe);
+                                actionButtonNext.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        talkcounter = 0;
+                                        setScreenTalk();
+                                    }
+                                });
+                            }
+                        });
                         break;
                 }
             }

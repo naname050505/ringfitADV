@@ -122,13 +122,15 @@ int string app_name 0x7f060007
 int string b_talk1 0x7f060008
 int string b_talk2 0x7f060009
 int string b_talk3 0x7f06000a
-int string confirm 0x7f06000b
-int string dash_count 0x7f06000c
-int string give_up 0x7f06000d
-int string set_return 0x7f06000e
-int string settings 0x7f06000f
-int string sub 0x7f060010
-int string touch_screen 0x7f060011
+int string b_talk_after_select1 0x7f06000b
+int string b_talk_after_select2 0x7f06000c
+int string confirm 0x7f06000d
+int string dash_count 0x7f06000e
+int string give_up 0x7f06000f
+int string set_return 0x7f060010
+int string settings 0x7f060011
+int string sub 0x7f060012
+int string touch_screen 0x7f060013
 int[] styleable ConstraintLayout_Layout { 0x010100c4, 0x0101011f, 0x01010120, 0x0101013f, 0x01010140, 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b }
 int styleable ConstraintLayout_Layout_android_orientation 0
 int styleable ConstraintLayout_Layout_android_maxWidth 1

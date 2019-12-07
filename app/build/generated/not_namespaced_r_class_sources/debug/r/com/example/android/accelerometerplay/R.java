@@ -522,13 +522,15 @@ public final class R {
     public static final int b_talk1=0x7f060008;
     public static final int b_talk2=0x7f060009;
     public static final int b_talk3=0x7f06000a;
-    public static final int confirm=0x7f06000b;
-    public static final int dash_count=0x7f06000c;
-    public static final int give_up=0x7f06000d;
-    public static final int set_return=0x7f06000e;
-    public static final int settings=0x7f06000f;
-    public static final int sub=0x7f060010;
-    public static final int touch_screen=0x7f060011;
+    public static final int b_talk_after_select1=0x7f06000b;
+    public static final int b_talk_after_select2=0x7f06000c;
+    public static final int confirm=0x7f06000d;
+    public static final int dash_count=0x7f06000e;
+    public static final int give_up=0x7f06000f;
+    public static final int set_return=0x7f060010;
+    public static final int settings=0x7f060011;
+    public static final int sub=0x7f060012;
+    public static final int touch_screen=0x7f060013;
   }
   public static final class styleable {
     /**

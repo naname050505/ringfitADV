@@ -103,6 +103,9 @@
     <string name="b_talk3">  そのまま何もせずぽっちゃリーマンになるか,\n
                             僕のようにムキムキスーパーボディになるか\n
                             覚悟を決めるんだ!!</string>
+    <string name="b_talk_after_select1"> よーーーし!! いい返事だ!!\n
+                                        まずはこのモンスターを倒してみよう!!!</string>
+    <string name="b_talk_after_select2"> ......(僕は突然目の前が真っ暗になった!!)</string>
     <string name="confirm">トレーニングする</string>
     <string name="dash_count">0</string>
     <string name="give_up">ぽっちゃリーマン</string>
