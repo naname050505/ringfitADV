@@ -82,19 +82,12 @@ public class AccelerometerPlayActivity extends Activity {
         mSimulationView = new SimulationView(this);
         mSimulationView.setBackgroundResource(R.drawable.battlebg012b);
         setContentView(R.layout.main);
-        //setContentView(mSimulationView); //never use!!
         final ImageView imageView2 = (ImageView)this.findViewById(R.id.image_view_2);
         imageView2.setImageResource(R.drawable.enemy015a);
 
         damageView = (ImageView) findViewById(R.id.damage_view);
+        damageView.setVisibility(View.INVISIBLE);
         damageAnimation = (AnimationDrawable)getResources().getDrawable(R.drawable.damage_animation,null);
-        damageView.setBackground(damageAnimation);
-
-        damageView.setVisibility(View.VISIBLE);
-        if(damageAnimation.isRunning()){
-            damageAnimation.stop();
-        }
-        damageAnimation.start();
 
         m_val_x = (TextView)this.findViewById(R.id.m_val_x);
         m_val_y = (TextView)this.findViewById(R.id.m_val_y);
@@ -123,11 +116,6 @@ public class AccelerometerPlayActivity extends Activity {
         bar.setMax(100);
     }
 
-    class Starter implements Runnable {
-        public void run() {
-            damageAnimation.start();
-        }
-    }
 
     @Override
     protected void onResume() {
@@ -413,25 +401,17 @@ public class AccelerometerPlayActivity extends Activity {
             state_info.setText(String.valueOf(up_flg));
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
-
-            damageView.setVisibility(View.VISIBLE);
-            if(damageAnimation.isRunning()){
-                damageAnimation.stop();
-            }
-            damageAnimation.start();
             bar.setProgress(100-(10*squat_counter));
             onWindowFocusChanged(true);
             int hitpoint = 100 - (10*squat_counter);
             bar.setProgress(hitpoint);
-            if (hitpoint <= 0) {
+            if (hitpoint <= 0 && !damageAnimation.isRunning()) {
                 // byouga site
                 damageView.setVisibility(View.VISIBLE);
-                if(damageAnimation.isRunning()){
-                    damageAnimation.stop();
-                }
+                damageView.setBackground(damageAnimation);
                 damageAnimation.start();
-                //final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
-                //startActivity((sub_intent));
+                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+                startActivity((sub_intent));
             }
         }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:oneshot="false"
+    android:oneshot="true"
     android:visible="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,5 +14,5 @@
     <item android:drawable="@drawable/damage1_5" android:duration="50" />
     <item android:drawable="@drawable/damage1_6" android:duration="50" />
     <item android:drawable="@drawable/damage1_7" android:duration="50" />
-    <item android:drawable="@drawable/damage1_8" android:duration="200" />
+    <item android:drawable="@drawable/damage1_8" android:duration="100" />
 </animation-list>
