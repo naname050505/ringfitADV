@@ -132,8 +132,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:visibility="visible"
-            tools:visibility="visible" />
+            android:visibility="invisible"
+            tools:visibility="invisible" />
 
 
         <Button

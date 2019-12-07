@@ -61,6 +61,7 @@ public class AccelerometerPlayActivity extends Activity {
     public ProgressBar bar;
     public String msg = "1";
     private AnimationDrawable damage_animation;
+    private ImageView damageView;
 
     /** Called when the activity is first created. */
     @Override
@@ -85,7 +86,7 @@ public class AccelerometerPlayActivity extends Activity {
         final ImageView imageView2 = (ImageView)this.findViewById(R.id.image_view_2);
         imageView2.setImageResource(R.drawable.enemy015a);
 
-        ImageView damageView = findViewById(R.id.damage_view);
+        damageView = findViewById(R.id.damage_view);
         damageView.setBackgroundResource(R.drawable.damage_animation);
         damage_animation = (AnimationDrawable)damageView.getBackground();
 
@@ -408,6 +409,7 @@ public class AccelerometerPlayActivity extends Activity {
             bar.setProgress(hitpoint);
             if (hitpoint <= 0) {
                 // byouga site
+                damageView.setVisibility(View.VISIBLE);
                 damage_animation.setVisible(true,true);
                 if(damage_animation.isRunning()){
                     damage_animation.stop();
