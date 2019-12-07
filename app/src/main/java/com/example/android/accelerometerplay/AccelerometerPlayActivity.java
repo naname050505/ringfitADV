@@ -154,6 +154,8 @@ public class AccelerometerPlayActivity extends Activity {
         private float mHorizontalBound;
         private float mVerticalBound;
         private final ParticleSystem mParticleSystem;
+        private int hitpoint;
+
 
 
         class Particle extends View {
@@ -338,6 +340,7 @@ public class AccelerometerPlayActivity extends Activity {
 
         @Override
         public void onSensorChanged(SensorEvent event) {
+
             if (event.sensor.getType() != Sensor.TYPE_ACCELEROMETER)
                 return;
             switch (mDisplay.getRotation()) {
@@ -371,13 +374,20 @@ public class AccelerometerPlayActivity extends Activity {
                         if (Math.abs(mSensorY -
                                 Float.parseFloat(s_val_y.getText().toString())) > 1) {
                             swing_counter++;
+                            hitpoint = 100 - (10*swing_counter);
+                            if (!damageAnimation.isRunning()) {
+                                damageView.setVisibility(View.VISIBLE);
+                                damageView.setBackground(damageAnimation);
+                                damageAnimation.start();
+                            }
                         }
                     }
+                    break;
                 case 2:
                      if (Float.parseFloat(s_val_z.getText().toString()) != 0 && !up_flg) {
                          if (Math.abs(Math.abs(mSensorZ) -
                                  Math.abs(Float.parseFloat(s_val_z.getText().toString()))) > 2) {
-                             down_counter += 1;
+                             down_counter ++;
                          }
                      }
                      if (down_counter>9){
@@ -389,11 +399,18 @@ public class AccelerometerPlayActivity extends Activity {
                              down_counter = down_counter - 3;
                              if (down_counter < 0) {
                                  down_counter = 0;
-                                 squat_counter = Integer.parseInt(squat_count_info.getText().toString()) + 1;
+                                 squat_counter = Integer.parseInt(squat_count_info.getText().toString())+1;
+                                 hitpoint = 100 - (10*squat_counter);
+                                 if (!damageAnimation.isRunning()) {
+                                     damageView.setVisibility(View.VISIBLE);
+                                     damageView.setBackground(damageAnimation);
+                                     damageAnimation.start();
+                                 }
                                  up_flg = false;
                              }
                          }
                      }
+                     break;
                 case 3:
                     up_flg = true;
                     break;
@@ -401,13 +418,8 @@ public class AccelerometerPlayActivity extends Activity {
             state_info.setText(String.valueOf(up_flg));
             squat_count_info.setText(String.valueOf(squat_counter));
             swing_count_info.setText(String.valueOf(swing_counter));
-            int hitpoint = 100 - (10*squat_counter);
             bar.setProgress(hitpoint);
             if (hitpoint <= 0 && !damageAnimation.isRunning()) {
-                // byouga site
-                damageView.setVisibility(View.VISIBLE);
-                damageView.setBackground(damageAnimation);
-                damageAnimation.start();
                 final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
                 startActivity((sub_intent));
             }
