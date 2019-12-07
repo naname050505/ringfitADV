@@ -69,6 +69,7 @@ drawable squwat
 drawable swing
 drawable wood
 id action_description
+id action_description_text
 id action_view1
 id action_view2
 id action_view3

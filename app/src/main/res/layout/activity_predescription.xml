@@ -15,34 +15,48 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-            <FrameLayout
-                android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/action_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:text="@string/activity1"
+            android:background="#CC00004f"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:alpha="0.9" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/battlebg012b"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/action_description"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/battlebg012b"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
+                android:layout_gravity="center"
+                android:alpha="0.75"
+                android:scaleType="fitCenter" />
 
-                <ImageView
-                    android:id="@+id/action_description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:alpha="0.75"
-                    android:scaleType="fitCenter" />
-
-                <Button
-                    android:id="@+id/button_next"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="100dp"
-                    android:layout_marginBottom="0dp"
-                    android:alpha="0.5"
-                    android:orientation="horizontal"
-                    android:text="@string/set_return"
-                    android:textSize="30sp"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </FrameLayout>
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="0dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:alpha="0.8"
+                android:orientation="horizontal"
+                android:text="@string/set_return"
+                android:textSize="40dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

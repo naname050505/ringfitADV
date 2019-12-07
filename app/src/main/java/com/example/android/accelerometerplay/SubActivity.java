@@ -23,6 +23,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -259,15 +260,18 @@ public class SubActivity extends Activity {
 
         final ImageView imageView_pre  = this.findViewById(R.id.enemy_view);
         final ImageView actionView_pre = this.findViewById(R.id.action_description);
-        //imageView_pre.setImageResource(R.drawable.enemy015a);
+        final TextView actionName      = this.findViewById(R.id.action_description_text);
         switch (Integer.valueOf(_msg)) {
             case 1:
+                actionName.setText(R.string.activity1);
                 actionView_pre.setImageResource(R.drawable.human_default1);
                 break;
             case 2:
+                actionName.setText(R.string.activity2);
                 actionView_pre.setImageResource(R.drawable.squwat);
                 break;
             case 3:
+                actionName.setText(R.string.activity3);
                 actionView_pre.setImageResource(R.drawable.swing);
                 break;
         }

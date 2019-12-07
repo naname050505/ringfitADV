@@ -1,4 +1,4 @@
-#Sun Dec 08 00:33:09 JST 2019
+#Sun Dec 08 01:03:04 JST 2019
 base.0=/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">AccelerometerPlay</string>
     <string name="sub">Sub Activity</string>
-    <string name="activity1">a</string>
+    <string name="activity1">Running</string>
     <string name="activity2">Squat</string>
     <string name="activity3">Swing</string>
     <string name="confirm">トレーニングする</string>
@@ -12,7 +12,8 @@
     <string name="give_up">ぽっちゃリーマン</string>
     <string name="dash_count">0</string>
 
-    <string name="a_talk1">  飲み会ばかりで体重が気になるよ〜</string>
+    <string name="a_talk1">  運動しないし,お酒飲んでばっかりで\n
+                             体重が気になるよ〜</string>
     <string name="b_talk1">  ハローマッスル!! ところで君の段腹は\n
                             いったい何個に割れてんだい??</string>
     <string name="a_talk2">  き,君は!?!?</string>
