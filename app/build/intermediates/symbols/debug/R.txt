@@ -124,7 +124,7 @@ int layout activity_talk 0x7f040005
 int layout main 0x7f040006
 int mipmap ic_launcher 0x7f050000
 int raw battle_sonic_loop 0x7f060000
-int raw remotest_liblary_loop 0x7f060001
+int raw menu 0x7f060001
 int string a_talk1 0x7f070000
 int string a_talk2 0x7f070001
 int string a_talk3 0x7f070002

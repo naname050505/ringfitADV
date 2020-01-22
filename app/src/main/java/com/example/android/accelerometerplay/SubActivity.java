@@ -44,7 +44,7 @@ public class SubActivity extends Activity {
         super.onCreate(savedInstanceState);
         //setScreenTalk();
         setScreenMain();
-        mp = MediaPlayer.create(getApplicationContext(), R.raw.remotest_liblary_loop);
+        mp = MediaPlayer.create(getApplicationContext(), R.raw.menu);
         mp.start();
     }
 
@@ -261,6 +261,9 @@ public class SubActivity extends Activity {
                 circleView.setImageResource(R.drawable.circle);
                 break;
         }
+        mp.release();// メモリの解放
+        mp = null; // 音楽プレーヤーを破棄
+
         Button returnButton = findViewById(R.id.button_next);
         final Intent intent = new Intent(getApplication(),
                                             AccelerometerPlayActivity.class);

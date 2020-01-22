@@ -524,7 +524,7 @@ public final class R {
   }
   public static final class raw {
     public static final int battle_sonic_loop=0x7f060000;
-    public static final int remotest_liblary_loop=0x7f060001;
+    public static final int menu=0x7f060001;
   }
   public static final class string {
     public static final int a_talk1=0x7f070000;

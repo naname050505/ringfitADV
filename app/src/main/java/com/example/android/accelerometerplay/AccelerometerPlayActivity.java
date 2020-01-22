@@ -137,7 +137,8 @@ public class AccelerometerPlayActivity extends Activity {
 
         bar = (ProgressBar)findViewById(R.id.progressBar1);
         bar.setMax(100);
-        mp = MediaPlayer.create(getApplicationContext(), R.raw.remotest_liblary_loop);
+
+        mp = MediaPlayer.create(getApplicationContext(), R.raw.battle_sonic_loop);
         mp.start();
     }
 
@@ -154,9 +155,7 @@ public class AccelerometerPlayActivity extends Activity {
         super.onPause();
         mSimulationView.stopSimulation();
         mWakeLock.release();
-        mp.pause(); // 一時停止
     }
-
 
     private void setScreenEnd(){
         setContentView(R.layout.activity_end);
@@ -167,15 +166,16 @@ public class AccelerometerPlayActivity extends Activity {
         final ImageView muscle = this.findViewById(R.id.muscle);
         muscle.setImageResource(R.drawable.muscle);
 
+        final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
         Button actionButtonNext = findViewById(R.id.tsugihe);
-
         actionButtonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+                finish();
                 startActivity((sub_intent));
             }
         });
+        mp.pause();
     }
     class SimulationView extends FrameLayout implements SensorEventListener {
         // diameter of the balls in meters

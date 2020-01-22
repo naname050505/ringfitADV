@@ -125,7 +125,7 @@ layout activity_talk
 layout main
 mipmap ic_launcher
 raw battle_sonic_loop
-raw remotest_liblary_loop
+raw menu
 string a_talk1
 string a_talk2
 string a_talk3
