@@ -4,12 +4,12 @@
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_swing_description2.png.flat",
-        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/swing_description2.png"
-    },
-    {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_yatta_man.png.flat",
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/yatta_man.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_swing_description2.png.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/swing_description2.png"
     },
     {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_human_default1.png.flat",
@@ -100,6 +100,10 @@
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/layout/activity_predescription.xml"
     },
     {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/raw_remotest_liblary_loop.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/raw/remotest_liblary_loop"
+    },
+    {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_swing_description1.png.flat",
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/swing_description1.png"
     },
@@ -146,6 +150,10 @@
     {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/drawable-hdpi_damage1_9.png.flat",
         "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/drawable-hdpi/damage1_9.png"
+    },
+    {
+        "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/raw_battle_sonic_loop.flat",
+        "source": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/src/main/res/raw/battle_sonic_loop"
     },
     {
         "merged": "/Users/naname/AndroidStudioProjects/android-AccelerometerPlay/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",

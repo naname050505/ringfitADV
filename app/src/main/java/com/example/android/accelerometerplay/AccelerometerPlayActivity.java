@@ -29,6 +29,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.content.Intent;
+import android.media.MediaPlayer;
 
 public class AccelerometerPlayActivity extends Activity {
 
@@ -68,6 +69,7 @@ public class AccelerometerPlayActivity extends Activity {
 
 
     private TextView endTalkMessage;
+    MediaPlayer mp = null;
 
 
     /** Called when the activity is first created. */
@@ -135,6 +137,8 @@ public class AccelerometerPlayActivity extends Activity {
 
         bar = (ProgressBar)findViewById(R.id.progressBar1);
         bar.setMax(100);
+        mp = MediaPlayer.create(getApplicationContext(), R.raw.remotest_liblary_loop);
+        mp.start();
     }
 
 
@@ -150,6 +154,7 @@ public class AccelerometerPlayActivity extends Activity {
         super.onPause();
         mSimulationView.stopSimulation();
         mWakeLock.release();
+        mp.pause(); // 一時停止
     }
 
 
@@ -473,6 +478,7 @@ public class AccelerometerPlayActivity extends Activity {
 
         @Override
         protected void onDraw(Canvas canvas) {
+
             final ParticleSystem particleSystem = mParticleSystem;
             final long now = System.currentTimeMillis();
             final float sx = mSensorX;

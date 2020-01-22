@@ -522,28 +522,32 @@ public final class R {
   public static final class mipmap {
     public static final int ic_launcher=0x7f050000;
   }
+  public static final class raw {
+    public static final int battle_sonic_loop=0x7f060000;
+    public static final int remotest_liblary_loop=0x7f060001;
+  }
   public static final class string {
-    public static final int a_talk1=0x7f060000;
-    public static final int a_talk2=0x7f060001;
-    public static final int a_talk3=0x7f060002;
-    public static final int a_talk_select=0x7f060003;
-    public static final int activity1=0x7f060004;
-    public static final int activity2=0x7f060005;
-    public static final int activity3=0x7f060006;
-    public static final int app_name=0x7f060007;
-    public static final int b_talk1=0x7f060008;
-    public static final int b_talk2=0x7f060009;
-    public static final int b_talk3=0x7f06000a;
-    public static final int b_talk_after_select1=0x7f06000b;
-    public static final int b_talk_after_select2=0x7f06000c;
-    public static final int confirm=0x7f06000d;
-    public static final int dash_count=0x7f06000e;
-    public static final int end_talk=0x7f06000f;
-    public static final int give_up=0x7f060010;
-    public static final int set_return=0x7f060011;
-    public static final int settings=0x7f060012;
-    public static final int sub=0x7f060013;
-    public static final int touch_screen=0x7f060014;
+    public static final int a_talk1=0x7f070000;
+    public static final int a_talk2=0x7f070001;
+    public static final int a_talk3=0x7f070002;
+    public static final int a_talk_select=0x7f070003;
+    public static final int activity1=0x7f070004;
+    public static final int activity2=0x7f070005;
+    public static final int activity3=0x7f070006;
+    public static final int app_name=0x7f070007;
+    public static final int b_talk1=0x7f070008;
+    public static final int b_talk2=0x7f070009;
+    public static final int b_talk3=0x7f07000a;
+    public static final int b_talk_after_select1=0x7f07000b;
+    public static final int b_talk_after_select2=0x7f07000c;
+    public static final int confirm=0x7f07000d;
+    public static final int dash_count=0x7f07000e;
+    public static final int end_talk=0x7f07000f;
+    public static final int give_up=0x7f070010;
+    public static final int set_return=0x7f070011;
+    public static final int settings=0x7f070012;
+    public static final int sub=0x7f070013;
+    public static final int touch_screen=0x7f070014;
   }
   public static final class styleable {
     /**

@@ -11,6 +11,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -35,11 +36,16 @@ public class SubActivity extends Activity {
     private TextView touch_screen;
     private Handler mHandler = new Handler();
     private ScheduledExecutorService mScheduledExecutor;
+
+    MediaPlayer mp = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setScreenTalk();
         setScreenMain();
+        mp = MediaPlayer.create(getApplicationContext(), R.raw.remotest_liblary_loop);
+        mp.start();
     }
 
     private void setScreenMain(){
