@@ -171,7 +171,6 @@ public class AccelerometerPlayActivity extends Activity {
         actionButtonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
                 startActivity((sub_intent));
             }
         });
@@ -328,8 +327,6 @@ public class AccelerometerPlayActivity extends Activity {
                         curr.resolveCollisionWithBounds();
                     }
                 }
-
-
             }
 
             public int getParticleCount() {
