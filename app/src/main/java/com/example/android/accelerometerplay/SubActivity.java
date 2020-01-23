@@ -261,8 +261,7 @@ public class SubActivity extends Activity {
                 circleView.setImageResource(R.drawable.circle);
                 break;
         }
-        mp.release();// メモリの解放
-        mp = null; // 音楽プレーヤーを破棄
+        mp.stop();
 
         Button returnButton = findViewById(R.id.button_next);
         final Intent intent = new Intent(getApplication(),

@@ -1,6 +1,8 @@
 package com.example.android.accelerometerplay;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -13,6 +15,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.util.AttributeSet;
@@ -66,7 +69,7 @@ public class AccelerometerPlayActivity extends Activity {
     private ImageView damageView;
     private int DashCounter = 0;
     private int hitpoint = 100;
-
+    final Handler handler = new Handler();
 
     private TextView endTalkMessage;
     MediaPlayer mp = null;
@@ -157,6 +160,16 @@ public class AccelerometerPlayActivity extends Activity {
         mWakeLock.release();
     }
 
+    public void wait_time(){
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
+                startActivity((sub_intent));
+                finish();
+            }
+        }, 5000);
+    }
     private void setScreenEnd(){
         setContentView(R.layout.activity_end);
         endTalkMessage = (TextView)this.findViewById(R.id.end_text);
@@ -165,16 +178,14 @@ public class AccelerometerPlayActivity extends Activity {
         onayamiman.setImageResource(R.drawable.yatta_man);
         final ImageView muscle = this.findViewById(R.id.muscle);
         muscle.setImageResource(R.drawable.muscle);
+        mp.stop();
 
-        final Intent sub_intent = new Intent(getApplication(), SubActivity.class);
-        Button actionButtonNext = findViewById(R.id.tsugihe);
-        actionButtonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity((sub_intent));
-            }
-        });
-        mp.pause();
+        Intent intent = new Intent(this, SubActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(this, 0, intent,
+                PendingIntent.FLAG_ONE_SHOT);
+        AlarmManager am =
+                (AlarmManager) getApplicationContext().getSystemService(Context.ALARM_SERVICE);
+        wait_time();
     }
     class SimulationView extends FrameLayout implements SensorEventListener {
         // diameter of the balls in meters

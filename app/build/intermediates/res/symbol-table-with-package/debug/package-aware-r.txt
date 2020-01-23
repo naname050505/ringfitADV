@@ -43,11 +43,14 @@ attr layout_goneMarginRight
 attr layout_goneMarginStart
 attr layout_goneMarginTop
 attr layout_optimizationLevel
+drawable android_button
 drawable ball
 drawable battlebg012b
 drawable battlebg013b
 drawable circle
 drawable circle_button
+drawable circle_button_1
+drawable circle_button_2
 drawable damage1_1
 drawable damage1_2
 drawable damage1_3
